@@ -1,0 +1,147 @@
+.card-header {
+    padding: 10px;
+    background: #56b68b;
+    color: white;
+}
+
+.card {
+    box-shadow: 0 1px 1px rgba(0, 0, 0, .1);
+}
+
+
+/*.navbar-collapse.collapse.in {
+    display: block!important;
+    margin-bottom: 54px;
+}*/
+
+.top-header {
+    padding: 20px 50px 20px 50px;
+}
+
+.quran-img {
+    width: 7vw !important;
+    float: left;
+}
+
+.header-text {
+    height: 3vw !important;
+    float: left;
+    transform: translateY(55%);
+    padding-left: 20px;
+}
+
+.macca {
+    width: 7vw !important;
+    float: left;
+    height: 7vw;
+}
+
+.madeena {
+    width: 7vw !important;
+    float: left;
+    height: 7vw;
+}
+
+.second-header {
+    position: relative;
+    z-index: 200 !important;
+    width: 90%;
+    margin: auto;
+}
+
+.smooth-scroll {
+    color: #089858 !important;
+}
+
+.first-section-row {
+    width: 90%;
+    margin: auto;
+}
+
+.first-section-column1 {
+    margin: 10px 0 0 0;
+    padding: 0;
+}
+
+.carousel-home {
+    margin-top: 0px;
+    padding: 10px;
+}
+
+.carousel-img {
+    height: 300px;
+}
+
+.carousal-text {
+    line-height: 50px;
+    text-align: center;
+    margin: 0px;
+}
+
+.partner-comp {
+    margin: 10px 0 0 0;
+    padding: 0 0 0 10px !important;
+}
+
+.margin-0 {
+    margin: 0px;
+}
+
+.marq-images {
+    width: 60px !important;
+    transform: translateY(17%);
+}
+
+.news-section {
+    margin: 0px;
+    padding-top: 10px;
+}
+
+.news-section-card {
+    max-height: 190px;
+}
+
+.marq-news-section {
+    min-height: 146px;
+}
+
+.marq-news-text {
+    padding: 10px;
+    font-weight: bold;
+}
+
+.carousel1-img {
+    height: 180px;
+    background-size: cover;
+}
+
+.carousel-home {
+    margin-top: 0px;
+}
+
+.carousel-toptextimg {
+    position: relative;
+    width: 100%;
+}
+
+.carousel-toptext {
+    position: absolute;
+    top: 255px;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.43);
+    color: white;
+    font-weight: bold;
+}
+.carousel-toptext1 {
+    position: absolute;
+    top: 130px;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.43);
+    color: white;
+    font-weight: bold;
+}
+
+
+/********************************************************/

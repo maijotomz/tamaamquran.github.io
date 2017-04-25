@@ -1,0 +1,16 @@
+{
+	"main_slider":[
+		{
+			"title": "Card1",
+			"url": "images/img/1.jpg"
+		},
+		{
+			"title":"Card2",
+			"url": "images/img/2.jpg"
+		},
+		{
+			"title":"Card3",
+			"url": "images/img/3.jpg"
+		}
+	]
+}

@@ -1,0 +1,879 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- TITLE OF SITE -->
+    <title>Quran</title>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="author" content="">
+    <!-- FAVICON  -->
+    <!-- Place your favicon.ico in the images directory -->
+    <!-- <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css"> -->
+    <!-- Font awesome -->
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <!-- Owl carousel -->
+    <link rel="stylesheet" href="css/owl.carousel.css">
+    <!-- Template main Css -->
+    <link rel="stylesheet" href="css/style1.css">
+    <!-- Modernizr -->
+    <script src="js/modernizr-2.6.2.min.js"></script>
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <!-- =========================
+       STYLESHEETS
+    ============================== -->
+    <!-- BOOTSTRAP CSS -->
+    <link rel="stylesheet" href="css/plugins/bootstrap.min.css">
+    <!-- FONT ICONS -->
+    <link rel="stylesheet" href="css/icons/iconfont.css">
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css"> -->
+    <!-- GOOGLE FONTS -->
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900,300italic,400italic,700italic,900italic" rel="stylesheet" type="text/css">
+    <!-- PLUGINS STYLESHEET -->
+    <link rel="stylesheet" href="css/plugins/magnific-popup.css">
+    <link rel="stylesheet" href="css/plugins/owl.carousel.css">
+    <link rel="stylesheet" href="css/plugins/loaders.css">
+    <link rel="stylesheet" href="css/plugins/animate.css">
+    <link rel="stylesheet" href="css/plugins/pickadate-default.css">
+    <link rel="stylesheet" href="css/plugins/pickadate-default.date.css">
+    <!-- CUSTOM STYLESHEET -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/new_style.css">
+    <!-- RESPONSIVE FIXES -->
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+
+<body data-spy="scroll" data-target="#main-navbar">
+    <audio id="my_audio" src="fathiha.mp3" loop="loop"></audio>
+    <div class="main-container" id="page">
+        <div class="row top-header">
+            <div class="col-xs-8 col-sm-8 col-md-9">
+                <a href="" class="navbar-brand smooth-scroll"><img src="images/mainlogo.png" class="quran-img" alt="logo">
+                    <!-- <p style="color: green;float: left;padding-top: 22px;font-size: 15px;font-weight: 700">TAMAM HOLY QURAN AWARD</p> -->
+                    <img src="images/newlogo1.png" alt="logo" class="header-text">
+                </a>
+            </div>
+            <div class="col-xs-4 col-sm-4 col-md-3">
+                <div class="pull-right">
+                    <a href="" class="navbar-brand smooth-scroll"><img src="images/macca.jpg" alt="logo" class="macca">
+                    </a>
+                    <a href="" class="navbar-brand smooth-scroll"><img src="images/madeena.jpg" alt="logo" class="madeena">
+                    </a>
+                    <!-- <a>
+                        <button class="btn-nav btn-green pause-btn audioBtn" type="" onclick="stopAudio()">
+                            <span class="fa fa-pause" aria-hidden="true"></span>
+                        </button>
+                        <button style="display:none;" class="btn-nav btn-green pause-btn audioBtn" type="" onclick="startAudio()">
+                            <span class="fa fa-play" aria-hidden="true"></span>
+                        </button>
+                    </a> -->
+                </div>
+            </div>
+        </div>
+        <header id="nav1-2" class="second-header">
+            <nav class="navbar" id="main-navbar" style="box-shadow: 2px 4px 10px #888888 !important;">
+                <div class="container pos" style="padding: 0;transform: translateY(17%);">
+                    <div class="navbar-header">
+                        <!-- Menu Button for Mobile Devices -->
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse2">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                    </div>
+                    <!-- /End Navbar Header -->
+                    <div class="collapse navbar-collapse" id="navbar-collapse2">
+                        <!-- Menu Links -->
+                        <ul class="nav navbar-nav navbar-left background">
+                            <li><a data-scroll href="index.html" class="smooth-scroll">HOME</a></li>
+                            <li><a data-scroll href="#" class="smooth-scroll">ABOUT US</a></li>
+                            <li><a data-scroll href="#team4-1" class="smooth-scroll">COMPETITION</a></li>
+                            <li><a data-scroll href="media.html" class="smooth-scroll">MEDIA</a></li>
+                            <li><a data-scroll href="gallery.html" class="smooth-scroll">GALLERY</a></li>
+                            <li><a data-scroll href="contact.html" class="smooth-scroll">CONTACT US</a></li>
+                            <li> <button class="btn-nav btn-green pause-btn audioBtn" type="" onclick="stopAudio()">
+                                <span class="fa fa-pause" aria-hidden="true"></span>
+                            </button>
+                            <button style="display:none;" class="btn-nav btn-green pause-btn audioBtn" type="" onclick="startAudio()">
+                                <span class="fa fa-play" aria-hidden="true"></span>
+                            </button></li>
+                           
+                        </ul>
+                        <!-- /End Menu Links -->
+                    </div>
+                    <!-- /End Navbar Collapse -->
+                </div>
+                <!-- /End Container -->
+            </nav>
+            <!-- /End Navbar -->
+        </header>
+        <div class="row first-section-row">
+            <div class="col-xs-12 col-sm-8 col-md-8 first-section-column1">
+                <div class="card">
+                    <div id="homeCarousel" class="carousel slide carousel-home" data-ride="carousel" style="box-shadow: 2px 4px 10px #888888 !important;">
+                        <!-- <ol class="carousel-indicators">
+                            <li data-target="#homeCarousel" data-slide-to="0" class="active"></li>
+                            <li data-target="#homeCarousel" data-slide-to="1"></li>
+                            <li data-target="#homeCarousel" data-slide-to="2"></li>
+                            <li data-target="#homeCarousel" data-slide-to="3"></li>
+                        </ol> -->
+                        <div class="carousel-inner" role="listbox">
+                            <div class="item">
+                                <div class="card">
+                                    <img class="card-img-top carousel-img carousel-toptextimg object-fit_scale-down" src="images/uploads/1.jpg" alt="Card image cap">
+                                    <div class="card-block">
+
+                                        <p class="card-text carousal-text carousel-toptext">Card2.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item ">
+                                <div class="card">
+                                    <img class="card-img-top carousel-img carousel-toptextimg object-fit_scale-down" src="images/uploads/15.png" alt="Card image cap">
+                                    <div class="card-block">
+                                        <p class="card-text carousal-text carousel-toptext">Card3.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item ">
+                                <div class="card">
+                                    <img class="card-img-top carousel-img carousel-toptextimg object-fit_scale-down" src="images/uploads/17.png" alt="Card image cap">
+                                    <div class="card-block">
+                                        <p class="card-text carousal-text carousel-toptext">Card1.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item active">
+                                <div class="card">
+                                    <img class="card-img-top carousel-img carousel-toptextimg object-fit_scale-down" src="images/uploads/8.png" alt="Card image cap">
+                                    <div class="card-block">
+                                        <p class="card-text carousal-text carousel-toptext ">Card1.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- <a class="left carousel-control" href="#homeCarousel" role="button" data-slide="prev">
+                        <span class="fa fa-angle-left" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="right carousel-control" href="#homeCarousel" role="button" data-slide="next">
+                        <span class="fa fa-angle-right" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a> -->
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-4 col-md-4 partner-comp">
+                <div class="row margin-0" style="box-shadow: 2px 4px 10px #888888 !important;">
+                    <div class="card">
+                        <div class="card-header">
+                            IN ASSOCIATION WITH
+                        </div>
+                        <marquee>
+                            <div class="row">
+                                <img src="images/macca.jpg" alt="logo" class="marq-images">
+                                <img src="images/madeena.jpg" alt="logo" class="marq-images">
+                                <img src="images/mainlogo.png" alt="logo" class="marq-images">
+                                <img src="images/madeena.jpg" alt="logo" class="marq-images">
+                                <img src="images/macca.jpg" alt="logo" class="marq-images">
+                            </div>
+                        </marquee>
+                    </div>
+                </div>
+                <div class="row news-section">
+                    <div class="card news-section-card" style="box-shadow: 2px 4px 10px #888888 !important;">
+                        <div class="card-header">
+                            NEWS
+                        </div>
+                        <marquee direction="up" class="marq-news-section">
+                            <p class="marq-news-text">This text will scroll from bottom to up</p>
+                        </marquee>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row card" style="width: 90%;margin:auto;margin-top: 10px;box-shadow: 2px 4px 10px #888888 !important;">
+            <div class="col-xs-6 col-sm-6 col-md-3" style="padding: 0px !important">
+                <div class="">
+                    <div id="homeCarousel" class="carousel slide carousel-home" data-ride="carousel">
+                        <div class="carousel-inner" role="listbox">
+                            <div class="item active">
+                                <div class="card">
+                                    <img class="card-img-top carousel1-img carousel-toptextimg object-fit_scale-down" src="images/Persons/noushad2.jpg" alt="Card image cap">
+                                    <div class="card-block">
+                                        <p class="card-text carousal-text carousel-toptext1">Card1.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="card">
+                                    <img class="card-img-top carousel1-img carousel-toptextimg object-fit_scale-down" src="images/Persons/noushad3.jpg" alt="Card image cap">
+                                    <div class="card-block">
+                                        <p class="card-text carousal-text carousel-toptext1">Card1.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="card">
+                                    <img class="card-img-top carousel1-img carousel-toptextimg object-fit_scale-down" src="images/Persons/abcd.jpg" alt="Card image cap">
+                                </div>
+                                <div class="card-block">
+                                    <p class="card-text carousal-text carousel-toptext1">Card1.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-6 col-sm-6 col-md-3" style="padding: 0px !important">
+                <div class="">
+                    <div id="homeCarousel" class="carousel slide carousel-home" data-ride="carousel">
+                        <div class="carousel-inner" role="listbox">
+                            <div class="item ">
+                                <div class="card">
+                                    <iframe width="100%" height="180" src="https://www.youtube.com/embed/HRyitTvDtAQ" frameborder="0" allowfullscreen class="carousel-toptextimg"></iframe>
+                                    <div class="card-block">
+                                        <p class="card-text carousal-text carousel-toptext1">Card1.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item active">
+                                <div class="card">
+                                    <iframe width="100%" height="180" src="https://www.youtube.com/embed/n_hVa457jn0" frameborder="0" allowfullscreen class="carousel-toptextimg"></iframe>
+                                    <div class="card-block">
+                                        <p class="card-text carousal-text carousel-toptext1">Card1.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item ">
+                                <div class="card">
+                                    <iframe width="100%" height="180" src="https://www.youtube.com/embed/oXUljc1feRM" frameborder="0" allowfullscreen class="carousel-toptextimg"></iframe>
+                                    <div class="card-block">
+                                        <p class="card-text carousal-text carousel-toptext1">Card1.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-6 col-sm-6 col-md-3" style="padding: 0px !important">
+                <div class="">
+                    <div id="homeCarousel" class="carousel slide carousel-home" data-ride="carousel">
+                        <div class="carousel-inner" role="listbox">
+                            <div class="item active">
+                                <div class="card">
+                                    <img class="card-img-top carousel1-img carousel-toptextimg object-fit_scale-down" src="images/uploads/1.jpg" alt="Card image cap">
+                                    <div class="card-block">
+                                        <p class="card-text carousal-text carousel-toptext1">Card1.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="card">
+                                    <img class="card-img-top carousel1-img carousel-toptextimg object-fit_scale-down" src="images/uploads/10.png" alt="Card image cap">
+                                    <div class="card-block">
+                                        <p class="card-text carousal-text carousel-toptext1">Card1.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="card">
+                                    <img class="card-img-top carousel1-img carousel-toptextimg object-fit_scale-down" src="images/uploads/11.png" alt="Card image cap">
+                                    <div class="card-block">
+                                        <p class="card-text carousal-text carousel-toptext1">Card1.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="card">
+                                    <img class="card-img-top carousel1-img carousel-toptextimg object-fit_scale-down" src="images/uploads/12.png" alt="Card image cap">
+                                    <div class="card-block">
+                                        <p class="card-text carousal-text carousel-toptext1">Card1.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="card">
+                                    <img class="card-img-top carousel1-img carousel-toptextimg object-fit_scale-down" src="images/uploads/13.png" alt="Card image cap">
+                                    <div class="card-block">
+                                        <p class="card-text carousal-text carousel-toptext1">Card1.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="card">
+                                    <img class="card-img-top carousel1-img carousel-toptextimg object-fit_scale-down" src="images/uploads/14.png" alt="Card image cap">
+                                    <div class="card-block">
+                                        <p class="card-text carousal-text carousel-toptext1">Card1.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="card">
+                                    <img class="card-img-top carousel1-img carousel-toptextimg object-fit_scale-down" src="images/uploads/15.png" alt="Card image cap">
+                                    <div class="card-block">
+                                        <p class="card-text carousal-text carousel-toptext1">Card1.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-6 col-sm-6 col-md-3" style="padding: 0px !important">
+                <div class="">
+                    <div id="homeCarousel" class="carousel slide carousel-home" data-ride="carousel">
+                        <div class="carousel-inner" role="listbox">
+                            <div class="item ">
+                                <div class="card">
+                                    <iframe width="100%" height="180" src="https://www.youtube.com/embed/oXUljc1feRM" frameborder="0" allowfullscreen class="carousel-toptextimg"></iframe>
+                                    <div class="card-block">
+                                        <p class="card-text carousal-text carousel-toptext1">Card1.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item active">
+                                <div class="card">
+                                    <iframe width="100%" height="180" src="https://www.youtube.com/embed/n_hVa457jn0" frameborder="0" allowfullscreenclass="carousel-toptextimg"></iframe>
+                                    <div class="card-block">
+                                        <p class="card-text carousal-text carousel-toptext1">Card1.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item ">
+                                <div class="card">
+                                    <iframe width="100%" height="180" src="https://www.youtube.com/embed/HRyitTvDtAQ" frameborder="0" allowfullscreenclass="carousel-toptextimg"></iframe>
+                                    <div class="card-block">
+                                        <p class="card-text carousal-text carousel-toptext1">Card1.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- =========================
+           FEATURES-TAB SECTION
+        ============================== -->
+        <!-- <section id="home" class="p-y-lg bg-edit" style="outline-offset: -3px;padding-top: 70px !important;padding-bottom: 300px !important">
+            <div class="container">
+            </div>
+        </section> -->
+        <!-- =========================
+           FEATURES-TAB SECTION
+        ============================== -->
+        <!--       <section id="features10-1" class="p-y-lg bg-edit" style="outline-offset: -3px;padding-top: 70px !important;padding-bottom: 300px !important">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8 col-md-offset-2">
+                        <div class="section-header text-center wow fadeIn" style="visibility: visible; animation-name: fadeIn;">
+                            <h2 style="font-size: 32px;color: #56b68b;">Our programs</h2>
+                            <p class="lead" style="color: black;font-size: 19px;">Tamam holy Quran award is a continuous which has taken an inspiration from Dubai holy Quran awards .This humble project takes to boost off the amplitude and value of Holy Quran to the world.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row features-tab m-y">
+                    <div class="tab-title current">
+                        <p class="f-w-900 m-b-0">Quran Recitation<i class="fa fa-caret-right i-right"></i></p>
+                    </div>
+                    <div class="tab-content content-align-md">
+                        <div class="row text-center">
+                            <div class="col-md-12">
+                                <h4>Creating a results driven experience</h4>
+                                <p class="p-tab m-b-md">Maiores ducimus aliquam est inventore quaerat quibusdam.</p>
+                            </div>
+                        </div>
+                        <div class="row y-middle c2">
+                            <div class="col-md-6">
+                                <div class="features-block">
+                                    <div class="col-sm-12 icon-left m-b-md clearfix">
+                                        <i class="icon-target2"></i>
+                                        <h5 class="m-t f-w-900">Competitive Analysis</h5>
+                                        <p>Tamam holy Quran award is a continuous which has taken an inspiration from Dubai holy Quran awards .This humble project takes to boost off the amplitude and value of Holy Quran to the world.</p>
+                                    </div>
+                                    <div class="col-sm-12 icon-left clearfix">
+                                        <i class="icon-strategy"></i>
+                                        <h5 class="m-t f-w-900">Digital Strategy</h5>
+                                        <p class="m-b">Tamam holy Quran award is a continuous which has taken an inspiration from Dubai holy Quran awards.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                
+                                <img src="images/quran.jpg" class="img-responsive m-x-auto" alt="" style="border-radius: 0px; border-color: rgb(105, 105, 110); border-style: none; border-width: 1px;height: 377px;">
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="tab-title">
+                        <p class="f-w-900 m-b-0">Hifzul Quran <i class="fa fa-caret-right i-right"></i></p>
+                    </div>
+                    <div class="tab-content">
+                        <div class="row text-center">
+                            <div class="col-md-12">
+                                <h4>It's about making ideas happens</h4>
+                                <p class="p-tab m-b-md">Tamam holy Quran award is a continuous which has taken an inspiration from Dubai holy Quran awards .This humble project takes to boost off the amplitude and value of Holy Quran to the world.</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-8 col-md-offset-2">
+                                <img src="images/img-1.jpg" class="img-responsive m-x-auto" alt="">
+                            </div>
+                        </div>
+                    </div>
+                   
+                    <div class="tab-title">
+                        <p class="f-w-900 m-b-0">Hifzul Quran <i class="fa fa-caret-right i-right"></i></p>
+                    </div>
+                    <div class="tab-content content-align-md">
+                        <div class="row text-center">
+                            <div class="col-md-12">
+                                <h4>Thinking about users</h4>
+                                <p class="p-tab m-b-md">Tamam holy Quran award is a continuous which has taken an inspiration from Dubai holy Quran awards .This humble project takes to boost off the amplitude and value of Holy Quran to the world.</p>
+                            </div>
+                        </div>
+                        <div class="row video y-middle c2">
+                            <div class="col-md-8">
+                                <img src="images/trophy1.jpg" alt="" class="img-responsive m-x-auto" style="height: 340px;">
+                            </div>
+                            <div class="col-md-4">
+                                <h5 class="f-w-900">Experience design is a way of thinking</h5>
+                                <p>Tamam holy Quran award is a continuous which has taken an inspiration from Dubai holy Quran awards .This humble project takes to boost off the amplitude and value of Holy Quran to the world.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-title">
+                        <p class="f-w-900 m-b-0">Interactive Design &amp; Product Development<i class="fa fa-caret-right i-right"></i></p>
+                    </div>
+                    <div class="tab-content">
+                        <div class="row text-center">
+                            <div class="col-md-12">
+                                <h4>Easy to use applications for every platform</h4>
+                                <p class="p-tab m-b-md">Tamam holy Quran award is a continuous which has taken an inspiration from Dubai holy Quran awards .This humble project takes to boost off the amplitude and value of Holy Quran to the world.</p>
+                            </div>
+                        </div>
+                        <div class="row c2">
+                            <div class="col-md-6">
+                                <div class="features-block">
+                                    <div class="col-sm-12 icon-left m-b-md clearfix">
+                                        <i class="icon-mobile"></i>
+                                        <h5 class="m-t f-w-900">Responsive Design</h5>
+                                        <p>Tamam holy Quran award is a continuous which has taken an inspiration from Dubai holy Quran awards .This humble project takes to boost off the amplitude and value of Holy Quran to the world.</p>
+                                    </div>
+                                    <div class="col-sm-12 icon-left clearfix">
+                                        <i class="icon-download2"></i>
+                                        <h5 class="m-t f-w-900">Third-party Integrations</h5>
+                                        <p>Tamam holy Quran award is a continuous which has taken an inspiration from Dubai holy Quran awards .This humble project takes to boost off the amplitude and value of Holy Quran to the world.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="features-block">
+                                    <div class="col-sm-12 icon-left m-b-md clearfix">
+                                        <i class="icon-basket"></i>
+                                        <h5 class="m-t f-w-900">eCommerce / Retail</h5>
+                                        <p>Tamam holy Quran award is a continuous which has taken an inspiration from Dubai holy Quran awards .This humble project takes to boost off the amplitude and value of Holy Quran to the world.</p>
+                                    </div>
+                                    <div class="col-sm-12 icon-left clearfix">
+                                        <i class="icon-tablet2"></i>
+                                        <h5 class="m-t f-w-900">Mobile Development</h5>
+                                        <p>Tamam holy Quran award is a continuous which has taken an inspiration from Dubai holy Quran awards .This humble project takes to boost off the amplitude and value of Holy Quran to the world.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                  
+                    <div class="tab-title">
+                        <p class="f-w-900 m-b-0">Content Managment <i class="fa fa-caret-right i-right"></i></p>
+                    </div>
+                    <div class="tab-content content-align-md">
+                        <div class="row text-center">
+                            <div class="col-md-12">
+                                <h4>Keeping your site update</h4>
+                                <p class="p-tab m-b-md">Tamam holy Quran award is a continuous which has taken an inspiration from Dubai holy Quran awards .This humble project takes to boost off the amplitude and value of Holy Quran to the world.</p>
+                            </div>
+                        </div>
+                        <div class="row features-block">
+                            <div class="col-md-10 col-md-offset-1 img-left m-b clearfix">
+                                <img src="images/flat1.png" alt="">
+                                <h5 class="m-t f-w-900">Content Marketing</h5>
+                                <p>Tamam holy Quran award is a continuous which has taken an inspiration from Dubai holy Quran awards .This humble project takes to boost off the amplitude and value of Holy Quran to the world.</p>
+                            </div>
+                            <div class="col-md-10 col-md-offset-1 img-left clearfix">
+                                <img src="images/flat3.png" alt="">
+                                <h5 class="m-t f-w-900">SEO</h5>
+                                <p>Tamam holy Quran award is a continuous which has taken an inspiration from Dubai holy Quran awards .This humble project takes to boost off the amplitude and value of Holy Quran to the world. </p>
+                            </div>
+                        </div>
+                    </div>
+                   
+                </div>
+               
+            </div>
+          
+        </section> -->
+        <!-- =========================
+             TESTIMONIAL
+        ============================== -->
+        <!-- =========================
+           PORTFOLIO
+        ============================== -->
+        <!--    <section id="portfolio2-1 " class="p-t-lg p-b-0 bg-edit " style="outline-offset: -3px; ">
+
+            <div class="container ">
+                <div class="row ">
+                    <div class="col-md-8 col-md-offset-2 ">
+                        <div class="section-header text-center wow fadeIn " style="visibility: visible; animation-name: fadeIn; ">
+                            <h2>Our gallery</h2>
+                            <p class="lead ">Tamam holy Quran award is a continuous which has taken an inspiration from Dubai holy Quran awards .This humble project takes to boost off the amplitude and value of Holy Quran to the world.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container-fluid ">
+                <ul class="portfolio-grid ">
+
+                    <li class="h caption-2 ">
+                        <figure><img src="images/uploads/vlcsnap-2017-03-26-17h51m21s726.png " class="img-responsive " alt=" " style="border-radius: 0px; border-color: rgb(105, 105, 110); border-style: none; border-width: 1px; ">
+                            <figcaption>
+                                <div class="caption-box ">
+                                    <div class="col-xs-7 ">
+                                        <p class="m-b-0 ">Project1</p>
+                                        <p class="small m-t-0 ">by John Doe</p>
+                                    </div>
+                                    <div class="col-xs-5 ">
+                                        <a href="images/portfolio1-xl.jpg " class="btn btn-green mp-gallery " title="Project1 Description ">View More</a>
+                                    </div>
+                                </div>
+                            </figcaption>
+                        </figure>
+                    </li>
+
+                    <li class="h caption-2 ">
+                        <figure><img src="images/uploads/vlcsnap-2017-03-26-17h51m50s873.png " class="img-responsive " alt=" " style="border-radius: 0px; border-color: rgb(105, 105, 110); border-style: none; border-width: 1px; ">
+                            <figcaption>
+                                <div class="caption-box ">
+                                    <div class="col-xs-7 ">
+                                        <p class="m-b-0 ">Project2</p>
+                                        <p class="small m-t-0 ">by John Doe</p>
+                                    </div>
+                                    <div class="col-xs-5 ">
+                                        <a href="images/portfolio2-xl.jpg " class="btn btn-green mp-gallery " title="Project2 Description ">View More</a>
+                                    </div>
+                                </div>
+                            </figcaption>
+                        </figure>
+                    </li>
+
+                    <li class="h caption-2 ">
+                        <figure><img src="images/uploads/vlcsnap-2017-03-26-18h03m22s940.png " class="img-responsive " alt=" " style="border-radius: 0px; border-color: rgb(105, 105, 110); border-style: none; border-width: 1px; ">
+                            <figcaption>
+                                <div class="caption-box ">
+                                    <div class="col-xs-7 ">
+                                        <p class="m-b-0 ">Project3</p>
+                                        <p class="small m-t-0 ">by John Doe</p>
+                                    </div>
+                                    <div class="col-xs-5 ">
+                                        <a href="images/portfolio3-xl.jpg " class="btn btn-green mp-gallery " title="Project3 Description ">View More</a>
+                                    </div>
+                                </div>
+                            </figcaption>
+                        </figure>
+                    </li>
+
+                    <li class="h caption-2 ">
+                        <figure><img src="images/uploads/vlcsnap-2017-03-26-18h01m43s077.png " class="img-responsive " alt=" " style="border-radius: 0px; border-color: rgb(105, 105, 110); border-style: none; border-width: 1px; ">
+                            <figcaption>
+                                <div class="caption-box ">
+                                    <div class="col-xs-7 ">
+                                        <p class="m-b-0 ">Project 4</p>
+                                        <p class="small m-t-0 ">by John Doe</p>
+                                    </div>
+                                    <div class="col-xs-5 ">
+                                        <a href="images/portfolio4-xl.jpg " class="btn btn-green mp-gallery " title="Project4 Description ">View More</a>
+                                    </div>
+                                </div>
+                            </figcaption>
+                        </figure>
+                    </li>
+
+                    <li class="h caption-2 ">
+                        <figure><img src="images/uploads/vlcsnap-2017-03-26-17h52m03s155.png " class="img-responsive " alt=" " style="border-radius: 0px; border-color: rgb(105, 105, 110); border-style: none; border-width: 1px; ">
+                            <figcaption>
+                                <div class="caption-box ">
+                                    <div class="col-xs-7 ">
+                                        <p class="m-b-0 ">Project 5</p>
+                                        <p class="small m-t-0 ">by John Doe</p>
+                                    </div>
+                                    <div class="col-xs-5 ">
+                                        <a href="images/portfolio5-xl.jpg " class="btn btn-green mp-gallery " title="Project5 Description " style="border-radius: 4px; font-size: 15px; background-color: rgb(36, 168, 109); box-shadow: rgba(0, 0, 0, 0.0588235) 0px 1.46601px 2.44335px 0px inset; border-color: rgb(36, 168, 109); border-style: solid; border-width: 3px; " src="images/uploads/vlcsnap-2017-03-26-18h04m35s532.png ">View More</a>
+                                    </div>
+                                </div>
+                            </figcaption>
+                        </figure>
+                    </li>
+
+                    <li class="h caption-2 ">
+                        <figure><img src="images/uploads/vlcsnap-2017-03-26-17h52m09s131.png " class="img-responsive " alt=" " style="border-radius: 0px; border-color: rgb(105, 105, 110); border-style: none; border-width: 1px; ">
+                            <figcaption>
+                                <div class="caption-box ">
+                                    <div class="col-xs-7 ">
+                                        <p class="m-b-0 ">Project6</p>
+                                        <p class="small m-t-0 ">by John Doe</p>
+                                    </div>
+                                    <div class="col-xs-5 ">
+                                        <a href="images/portfolio6-xl.jpg " class="btn btn-green mp-gallery " title="Project6 Desctiption ">View More</a>
+                                    </div>
+                                </div>
+                            </figcaption>
+                        </figure>
+                    </li>
+
+                    <li class="h caption-2 ">
+                        <figure><img src="images/uploads/vlcsnap-2017-03-26-18h01m32s220.png " class="img-responsive " alt=" " style="border-radius: 0px; border-color: rgb(105, 105, 110); border-style: none; border-width: 1px; ">
+                            <figcaption>
+                                <div class="caption-box ">
+                                    <div class="col-xs-7 ">
+                                        <p class="m-b-0 ">Project7</p>
+                                        <p class="small m-t-0 ">by John Doe</p>
+                                    </div>
+                                    <div class="col-xs-5 ">
+                                        <a href="images/portfolio1-xl.jpg " class="btn btn-green mp-gallery " title="Project7 Description ">View More</a>
+                                    </div>
+                                </div>
+                            </figcaption>
+                        </figure>
+                    </li>
+
+                    <li class="h caption-2 ">
+                        <figure><img src="images/uploads/vlcsnap-2017-03-26-17h56m37s691.png " class="img-responsive " alt=" " style="border-radius: 0px; border-color: rgb(105, 105, 110); border-style: none; border-width: 1px; ">
+                            <figcaption>
+                                <div class="caption-box ">
+                                    <div class="col-xs-7 ">
+                                        <p class="m-b-0 ">Project8</p>
+                                        <p class="small m-t-0 ">by John Doe</p>
+                                    </div>
+                                    <div class="col-xs-5 ">
+                                        <a href="images/portfolio1-xl.jpg " class="btn btn-green mp-gallery " title="Project8 Description ">View More</a>
+                                    </div>
+                                </div>
+                            </figcaption>
+                        </figure>
+                    </li>
+                </ul>
+
+            </div>
+
+        </section> -->
+        <!-- =========================
+           TEAM
+        ============================== -->
+        <section id="team4-1 " class="p-t-lg p-b-md bg-edit team " style="padding-top: 70px !important;padding-bottom: 70px !important ">
+            <div class="container ">
+                <!-- Section Header -->
+                <div class="row ">
+                    <div class="col-md-8 col-md-offset-2 ">
+                        <div class="section-header text-center wow fadeIn " style="visibility: visible; animation-name: fadeIn; ">
+                            <h2 style="font-size: 32px;color: #56b68b ">Small Team but Big in Design</h2>
+                            <p class="lead " style="color: black;font-size: 19px ">Nihil repudiandae accusamus labore dicta natus explicabo blanditiis nobis, dolore porro eius nulla magnam autem cupiditate quaerat laborum.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row c3 ">
+                    <!-- Team Item 1 -->
+                    <div class="col-md-4 ">
+                        <div class="team-member text-center ">
+                            <div class="tm-img "><img src="images/Persons/abcd.jpg " class="img-responsive m-x-auto " alt=" " style="border-radius: 50%;height: 300px; "></div>
+                            <div class="tm-details ">
+                                <p class="tm-name black-text m-b-md f-w-900 ">Noushad A.R<span class="tm-job f-w-900 ">Chairman</span></p>
+                                <div class="social-btn text-center inverse ">
+                                    <a href="# " class="social-btn sb-facebook "><i class="fa fa-facebook "></i></a>
+                                    <a href="# " class="social-btn sb-google-plus "><i class="fa fa-google-plus "></i></a>
+                                    <a href="# " class="social-btn sb-twitter "><i class="fa fa-twitter "></i></a>
+                                    <a href="# " class="social-btn sb-instagram "><i class="fa fa-instagram "></i></a>
+                                </div>
+                                <p class="tm-info m-t-md ">He likes to keep things simple and focus on the little details. Adams's radical vision required a newfound venture.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Team Item 2 -->
+                    <div class="col-md-4 ">
+                        <div class="team-member text-center ">
+                            <div class="tm-img "><img src="images/Persons/siddiqe.jpg " class="img-responsive m-x-auto " alt=" " style="border-radius: 50%;height: 300px; "></div>
+                            <div class="tm-details ">
+                                <p class="tm-name black-text m-b-md f-w-900 ">E.M. Siddiq Al Mannani<span class="tm-job f-w-900 ">General Convener</span></p>
+                                <div class="social-btn text-center inverse ">
+                                    <a href="# " class="social-btn sb-facebook "><i class="fa fa-facebook "></i></a>
+                                    <a href="# " class="social-btn sb-google-plus "><i class="fa fa-google-plus "></i></a>
+                                    <a href="# " class="social-btn sb-twitter "><i class="fa fa-twitter "></i></a>
+                                    <a href="# " class="social-btn sb-instagram "><i class="fa fa-instagram "></i></a>
+                                </div>
+                                <p class="tm-info m-t-md ">He loves trying out new techniques and finding the perfect solution for any kind of requirements.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Team Item 3 -->
+                    <div class="col-md-4 ">
+                        <div class="team-member text-center ">
+                            <div class="tm-img "><img src="images/Persons/kabeerbakavi.jpg " class="img-responsive m-x-auto " alt=" " style="border-radius: 50%;height: 300px; "></div>
+                            <div class="tm-details ">
+                                <p class="tm-name black-text m-b-md f-w-900 ">Al hafilu Ahamed Kabeer Baqavi<span class="tm-job f-w-900 ">Patron</span></p>
+                                <div class="social-btn text-center inverse ">
+                                    <a href="# " class="social-btn sb-facebook "><i class="fa fa-facebook "></i></a>
+                                    <a href="# " class="social-btn sb-google-plus "><i class="fa fa-google-plus "></i></a>
+                                    <a href="# " class="social-btn sb-twitter "><i class="fa fa-twitter "></i></a>
+                                    <a href="# " class="social-btn sb-instagram "><i class="fa fa-instagram "></i></a>
+                                </div>
+                                <p class="tm-info m-t-md ">She enjoys the finer details of a project, considering every stage of its journey from planning to completion.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- /End Row -->
+            </div>
+            <!-- /End Container -->
+        </section>
+        <!-- =========================
+           TIMELINE SECTION
+        ============================== -->
+        <!-- /End Timeline Section -->
+        <!-- =========================
+             BLOG SECTION
+        ============================== -->
+        <!--  <section id="blog3-1 " class="p-y-lg blog bg-edit " style="outline-offset: -3px; ">
+            <div class="container ">
+
+                <div class="row ">
+                    <div class="col-md-8 col-md-offset-2 ">
+                        <div class="section-header text-center wow fadeIn " style="visibility: visible; animation-name: fadeIn; ">
+                            <h2>Latest News</h2>
+                            <p class="lead ">Tamam holy Quran award is a continuous which has taken an inspiration from Dubai holy Quran awards .This humble project takes to boost off the amplitude and value of Holy Quran to the world.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row ">
+                    <div class="col-md-10 col-md-offset-1 content-block c2 ">
+
+                        <div class="col-sm-6 ">
+                            <a href=" "><img src="images/medical-3.jpg " alt=" " class="img-responsive img-rounded "></a>
+                            <div class="post-info ">
+                                <div class="date text-edit ">
+                                    <span class="day ">25</span> Nov
+                                </div>
+                                <a href=" "><h5>Provident cumque nam odit reiciendis iste sunt est sapiente rerum.</h5></a>
+                                <h6 class="p-opacity ">Posted by Harold Butler in <strong>Neurology</strong></h6>
+                            </div>
+                            <p class="p-opacity ">Tamam holy Quran award is a continuous which has taken an inspiration from Dubai holy Quran awards .This humble project takes to boost off the amplitude and value of Holy Quran to the world.</p>
+                            <a href=" " class="more-link edit ">Continue Reading ...</a>
+                        </div>
+
+                        <div class="col-sm-6 ">
+                            <a href=" "><img src="images/medical-3.jpg " alt=" " class="img-responsive img-rounded "></a>
+                            <div class="post-info ">
+                                <div class="date text-edit ">
+                                    <span class="day ">12</span> Oct
+                                </div>
+                                <a href=" "><h5>Minus cupiditate sapiente esse vel sint totam quos hic natus assumenda.&nbsp;</h5></a>
+                                <h6 class="p-opacity ">Posted by Anthony Kim in <strong>Medical Center</strong></h6>
+                            </div>
+                            <p class="p-opacity ">Tamam holy Quran award is a continuous which has taken an inspiration from Dubai holy Quran awards .This humble project takes to boost off the amplitude and value of Holy Quran to the world.</p>
+                            <a href=" " class="more-link edit ">Continue Reading ...</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </section> -->
+        <!-- =========================
+           CONTACT SECTION
+        ============================== -->
+        <!-- =========================
+             FOOTER
+        ============================== -->
+        <footer id="footer4-1 " class="p-y-md footer f4 bg-edit bg-grey " style="padding-top: 50px !important;padding-bottom: 50 !important;background-color: #56b68b !important; ">
+            <div class="container ">
+                <div class="row c3 ">
+                    <!-- Logo -->
+                    <div class="col-sm-3 col-xs-12 center-sm ">
+                        <img src="images/newlogo.jpg " alt="logo " style="height: 100px !important;float: left; border-radius: 68px;">
+                        <p style="color: white;float: left;padding-top: 32px;padding-left: 6px;font-size: 18px; ">Tamam</p>
+                    </div>
+                    <!-- Content -->
+                    <div class="col-sm-5 col-xs-12 ">
+                        <div class="footer-desc ">
+                            <p style="color:white">Tamam holy Quran award is a continuous which has taken an inspiration from Dubai holy Quran awards .This humble project takes to boost off the amplitude and value of Holy Quran to the world.</p>
+                            <p class="m-t " style="color:white">Copyright © 2017 Tamam</p>
+                        </div>
+                    </div>
+                    <!-- Social Link -->
+                    <div class="col-sm-4 col-xs-12 " style="padding-top:32px; ">
+                        <div class="footer-social social-btn text-center inverse ">
+                            <a href="# " class="social-btn sb-facebook "><i class="fa fa-facebook "></i></a>
+                            <a href="# " class="social-btn sb-google-plus "><i class="fa fa-google-plus "></i></a>
+                            <a href="# " class="social-btn sb-twitter "><i class="fa fa-twitter "></i></a>
+                            <a href="# " class="social-btn sb-instagram "><i class="fa fa-instagram "></i></a>
+                        </div>
+                    </div>
+                </div>
+                <!-- /End Row -->
+            </div>
+            <!-- /End Container -->
+        </footer>
+    </div>
+    <!-- /End Main Container -->
+    <!-- Back to Top Button -->
+    <!--
+    <a href="# " class="top ">Top</a>
+    -->
+    <!-- =========================
+         SCRIPTS
+    ============================== -->
+    <script src="js/smooth-scroll.js "></script>
+    <script>
+    smoothScroll.init();
+    </script>
+    <script id="twitter-wjs " src="https://platform.twitter.com/widgets.js "></script>
+    <script src="js/plugins/jquery1.11.2.min.js "></script>
+    <script src="js/plugins/bootstrap.min.js "></script>
+    <script src="js/plugins/jquery.easing.1.3.min.js "></script>
+    <script src="js/plugins/jquery.countTo.js "></script>
+    <script src="js/plugins/jquery.formchimp.min.js "></script>
+    <script src="js/plugins/jquery.jCounter-0.1.4.js "></script>
+    <script src="js/plugins/jquery.magnific-popup.min.js "></script>
+    <script src="js/plugins/jquery.vide.min.js "></script>
+    <script src="js/plugins/owl.carousel.min.js "></script>
+    <script src="js/plugins/spectragram.min.js "></script>
+    <script src="js/plugins/twitterFetcher_min.js "></script>
+    <script src="js/plugins/wow.min.js "></script>
+    <script src="js/plugins/picker.js "></script>
+    <script src="js/plugins/picker.date.js "></script>
+    <!-- Custom Script -->
+    <script src="js/custom.js "></script>
+    <!--  <iframe id="rufous-sandbox " scrolling="no " frameborder="0 " allowtransparency="true " allowfullscreen="true " style="position: absolute; visibility: hidden; display: none; width: 0px; height: 0px; padding: 0px; border: none; "></iframe> -->
+    <script>
+    // $(document).ready(function() {
+    //     // $("#my_audio ").get(0).play();
+    // });
+
+    // function stopAudio() {
+    //     $("#my_audio ").get(0).pause();
+    //     $(".audioBtn ").toggle();
+    // }
+
+    // function startAudio() {
+    //     $("#my_audio ").get(0).play();
+    //     $(".audioBtn ").toggle();
+    // }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- TITLE OF SITE -->
+    <title>Quran</title>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="author" content="">
+    <!-- FAVICON  -->
+    <!-- Place your favicon.ico in the images directory -->
+    <!-- <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css"> -->
+    <!-- Font awesome -->
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <!-- Owl carousel -->
+    <link rel="stylesheet" href="css/owl.carousel.css">
+    <!-- Template main Css -->
+    <link rel="stylesheet" href="css/style1.css">
+    <!-- Modernizr -->
+    <script src="js/modernizr-2.6.2.min.js"></script>
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <!-- =========================
+       STYLESHEETS
+    ============================== -->
+    <!-- BOOTSTRAP CSS -->
+    <link rel="stylesheet" href="css/plugins/bootstrap.min.css">
+    <!-- FONT ICONS -->
+    <link rel="stylesheet" href="css/icons/iconfont.css">
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css"> -->
+    <!-- GOOGLE FONTS -->
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900,300italic,400italic,700italic,900italic" rel="stylesheet" type="text/css">
+    <!-- PLUGINS STYLESHEET -->
+    <link rel="stylesheet" href="css/plugins/magnific-popup.css">
+    <link rel="stylesheet" href="css/plugins/owl.carousel.css">
+    <link rel="stylesheet" href="css/plugins/loaders.css">
+    <link rel="stylesheet" href="css/plugins/animate.css">
+    <link rel="stylesheet" href="css/plugins/pickadate-default.css">
+    <link rel="stylesheet" href="css/plugins/pickadate-default.date.css">
+    <!-- CUSTOM STYLESHEET -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- <link rel="stylesheet" href="css/modalstyle.css"> -->
+    <link rel="stylesheet" href="css/new_style.css">
+    <!-- RESPONSIVE FIXES -->
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+
+<body data-spy="scroll" data-target="#main-navbar">
+    <audio id="my_audio" src="fathiha.mp3" loop="loop"></audio>
+    <div class="main-container" id="page">
+        <header id="nav1-1" style="position: fixed;z-index: 200 !important;width: 100% !important">
+            <nav class="navbar" id="main-navbar">
+                <div class="container">
+                    <div class="navbar-header">
+                        <!-- Menu Button for Mobile Devices -->
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a href="index.html" class="navbar-brand smooth-scroll"><img src="images/newlogo.jpg" alt="logo" style="height: 70px !important;float: left">
+                            <p style="color: green;float: left;padding-top: 22px;font-size: 15px;font-weight: 700">Tamam</p>
+                        </a>
+                    </div>
+                    <!-- /End Navbar Header -->
+                    <div class="collapse navbar-collapse" id="navbar-collapse" style="padding-top:15px;">
+                        <!-- Menu Links -->
+                        <ul class="nav navbar-nav navbar-right">
+                           <li><a data-scroll href="index.html" class="smooth-scroll">HOME</a></li>
+                            <li><a data-scroll href="#" class="smooth-scroll">ABOUT US</a></li>
+                            <li><a data-scroll href="#team4-1" class="smooth-scroll">COMPETITION</a></li>
+                            <li><a data-scroll href="media.html" class="smooth-scroll">MEDIA</a></li>
+                            <li><a data-scroll href="gallery.html" class="smooth-scroll">GALLERY</a></li>
+                            <li><a data-scroll href="contact.html" class="smooth-scroll">CONTACT US</a></li>
+                            <button class="btn-nav btn-green pause-btn audioBtn" type="" onclick="stopAudio()">
+                                <span class="fa fa-pause" aria-hidden="true"></span>
+                            </button>
+                            <button style="display:none;" class="btn-nav btn-green pause-btn audioBtn" type="" onclick="startAudio()">
+                                <span class="fa fa-play" aria-hidden="true"></span>
+                            </button>
+                        </ul>
+                        <!-- /End Menu Links -->
+                    </div>
+                    <!-- /End Navbar Collapse -->
+                </div>
+                <!-- /End Container -->
+            </nav>
+            <!-- /End Navbar -->
+        </header>
+        <section id="contact3-2 " class="p-y-lg contact bg-edit bg-dark first-section-row" style="padding-top: 140px !important;padding-bottom: 70px !important ">
+            <div class="container ">
+                <!-- Section Header -->
+                <div class="row ">
+                    <div class="col-md-8 col-md-offset-2 ">
+                        <div class="section-header text-center text-white wow fadeIn " style="visibility: visible; animation-name: fadeIn; ">
+                            <h2 style="font-size: 32px; ">Ready to Get Started?</h2>
+                            <p class="lead " style="font-size: 19px ">Tamam holy Quran award is a continuous which has taken an inspiration from Dubai holy Quran awards .This humble project takes to boost off the amplitude and value of Holy Quran to the world.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row c2 text-white ">
+                    <div class="col-md-6 ">
+                        <!-- Contact Form -->
+                        <h4 class="f-w-900 m-b-md ">Drop us a line</h4>
+                        <form class="form-horizontal form-white " id="contactForm ">
+                            <!-- Notifications -->
+                            <p class="success cf text-center "><i class="fa fa-check "></i> <strong>Your message has successfully been sent.</strong></p>
+                            <p class="failed cf text-center "><i class="fa fa-exclamation-circle "></i><strong> Something went wrong!</strong></p>
+                            <div class="form-group ">
+                                <input type="text " class="form-control " id="cfName " placeholder="Name " required=" ">
+                            </div>
+                            <div class="form-group ">
+                                <input type="email " class="form-control " id="cfEmail " placeholder="Email " required=" ">
+                            </div>
+                            <div class="form-group ">
+                                <input type="text " class="form-control " id="cfSubject " placeholder="Subject " required=" ">
+                            </div>
+                            <div class="form-group ">
+                                <textarea id="cfMessage " rows="5 " class="form-control " placeholder="Your Message " required=" "></textarea>
+                            </div>
+                            <div class="form-group m-b-0 ">
+                                <button type="submit " class="btn btn-green wow pulse " data-wow-iteration="2 " style="visibility: visible; animation-iteration-count: 2; animation-name: pulse; ">GIVE US A SHOUT</button>
+                            </div>
+                        </form>
+                    </div>
+                    <!-- /End Col -->
+                    <div class="col-md-6 ">
+                        <!-- Map and Contact Info -->
+                        <h4 class="f-w-900 m-b-md ">Where we are</h4>
+                        <div class="m-b-md ">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3943.803738249549!2d76.73002051537085!3d8.7101791937424!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b05eeb515555555%3A0x85256b521f7ca3f7!2sRathickal+Muslim+Jamath!5e0!3m2!1sen!2sin!4v1491467598599 " width="600 " height="360 " frameborder="0 " style="border:0 " allowfullscreen></iframe>
+                            <!--  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3943.803738249549!2d76.73002051537085!3d8.7101791937424!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b05eeb515555555%3A0x85256b521f7ca3f7!2sRathickal+Muslim+Jamath!5e0!3m2!1sen!2sin!4v1491467598599 " width="600 " height="450 " frameborder="0 " style="border:0 " allowfullscreen></iframe> -->
+                        </div>
+                        <div class="col-sm-6 p-l-0 mini-info ">
+                            <h5 class="f-w-900 ">Office Address</h5>
+                            <p>Varkala
+                                <br> Rathickal, Vettoor-cherunniyoor
+                                <br> Kerala 695312
+                            </p>
+                        </div>
+                        <div class="col-sm-6 p-l-0 mini-info ">
+                            <h5 class="f-w-900 ">Contact Information</h5>
+                            <p><strong>Local</strong>: (+012) 345 678 90
+                                <br>
+                                <strong>Mobile</strong>: (+012) 345 678 90
+                                <br>
+                                <a href="mailto:mail@themedept.com " class="inverse "><strong>mail@themedept.com</strong></a></p>
+                        </div>
+                    </div>
+                    <!-- /End Col -->
+                </div>
+                <!-- /End Row -->
+            </div>
+            <!-- /End Container -->
+        </section>
+        <footer id="footer4-1 " class="p-y-md footer f4 bg-edit bg-grey " style="padding-top: 50px !important;padding-bottom: 0 !important;background-color: #ffffff !important ">
+            <div class="container ">
+                <div class="row c3 ">
+                    <!-- Logo -->
+                    <div class="col-sm-3 col-xs-12 center-sm ">
+                        <img src="images/newlogo.jpg " alt="logo " style="height: 100px !important;float: left; ">
+                        <p style="color: green;float: left;padding-top: 32px;padding-left: 6px;font-size: 18px; ">Tamam</p>
+                    </div>
+                    <!-- Content -->
+                    <div class="col-sm-5 col-xs-12 ">
+                        <div class="footer-desc ">
+                            <p>Tamam holy Quran award is a continuous which has taken an inspiration from Dubai holy Quran awards .This humble project takes to boost off the amplitude and value of Holy Quran to the world.</p>
+                            <p class="m-t ">Copyright © 2017 Tamam</p>
+                        </div>
+                    </div>
+                    <!-- Social Link -->
+                    <div class="col-sm-4 col-xs-12 " style="padding-top:32px; ">
+                        <div class="footer-social social-btn text-center inverse ">
+                            <a href="# " class="social-btn sb-facebook "><i class="fa fa-facebook "></i></a>
+                            <a href="# " class="social-btn sb-google-plus "><i class="fa fa-google-plus "></i></a>
+                            <a href="# " class="social-btn sb-twitter "><i class="fa fa-twitter "></i></a>
+                            <a href="# " class="social-btn sb-instagram "><i class="fa fa-instagram "></i></a>
+                        </div>
+                    </div>
+                </div>
+                <!-- /End Row -->
+            </div>
+            <!-- /End Container -->
+        </footer>
+        <!-- =========================
+         SCRIPTS 
+    ============================== -->
+        <script src="js/smooth-scroll.js "></script>
+        <script>
+        smoothScroll.init();
+        </script>
+        <script id="twitter-wjs " src="https://platform.twitter.com/widgets.js "></script>
+        <script src="js/plugins/jquery1.11.2.min.js "></script>
+        <script src="js/plugins/bootstrap.min.js "></script>
+        <script src="js/plugins/jquery.easing.1.3.min.js "></script>
+        <script src="js/plugins/jquery.countTo.js "></script>
+        <script src="js/plugins/jquery.formchimp.min.js "></script>
+        <script src="js/plugins/jquery.jCounter-0.1.4.js "></script>
+        <script src="js/plugins/jquery.magnific-popup.min.js "></script>
+        <script src="js/plugins/jquery.vide.min.js "></script>
+        <script src="js/plugins/owl.carousel.min.js "></script>
+        <script src="js/plugins/spectragram.min.js "></script>
+        <script src="js/plugins/twitterFetcher_min.js "></script>
+        <script src="js/plugins/wow.min.js "></script>
+        <script src="js/plugins/picker.js "></script>
+        <script src="js/plugins/picker.date.js "></script>
+        <!-- Custom Script -->
+        <script src="js/custom.js "></script>
+        <!--  <iframe id="rufous-sandbox " scrolling="no " frameborder="0 " allowtransparency="true " allowfullscreen="true " style="position: absolute; visibility: hidden; display: none; width: 0px; height: 0px; padding: 0px; border: none; "></iframe> -->
+        <script>
+        $(".modal-fullscreen ").on('show.bs.modal', function() {
+            setTimeout(function() {
+                $(".modal-backdrop ").addClass("modal-backdrop-fullscreen ");
+            }, 0);
+        });
+        $(".modal-fullscreen ").on('hidden.bs.modal', function() {
+            $(".modal-backdrop ").addClass("modal-backdrop-fullscreen ");
+        });
+        $('#admin-create').modal('show');
+        </script>
+        <script>
+        $(document).ready(function() {
+            // $("#my_audio ").get(0).play();
+        });
+
+        function stopAudio() {
+            $("#my_audio ").get(0).pause();
+            $(".audioBtn ").toggle();
+        }
+
+        function startAudio() {
+            $("#my_audio ").get(0).play();
+            $(".audioBtn ").toggle();
+        }
+        </script>
+</body>
+
+</html>
