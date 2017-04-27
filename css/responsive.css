@@ -1086,5 +1086,29 @@
         margin-right: inherit;
         margin-left: auto;
     }*/
-    
+}
+
+@media only screen and (max-width: 2000px) {
+    .padnew {
+        padding: 18px 78px !important;
+    }
+
+}
+@media only screen and (max-width: 1200px) {
+    .padnew {
+        padding: 18px 57px !important;
+    }
+}
+@media only screen and (max-width: 990px) {
+    .padnew {
+        padding: 18px 139px !important;
+    }
+}
+@media only screen and (max-width: 768px) {
+    .padnew {
+        padding: 18px 120px !important;
+    }
+    .widthli{
+            width: 100% !important;
+    }
 }
