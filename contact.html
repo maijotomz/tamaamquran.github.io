@@ -51,37 +51,59 @@
 <body data-spy="scroll" data-target="#main-navbar">
     <audio id="my_audio" src="fathiha.mp3" loop="loop"></audio>
     <div class="main-container" id="page">
-        <header id="nav1-1" style="position: fixed;z-index: 200 !important;width: 100% !important">
-            <nav class="navbar" id="main-navbar">
-                <div class="container">
+       <div class="row top-header">
+            <div class="col-xs-8 col-sm-8 col-md-9">
+                <a href="" class="navbar-brand smooth-scroll"><img src="images/mainlogo.png" class="quran-img" alt="logo">
+                    <!-- <p style="color: green;float: left;padding-top: 22px;font-size: 15px;font-weight: 700">TAMAM HOLY QURAN AWARD</p> -->
+                    <img src="images/newlogo1.png" alt="logo" class="header-text">
+                </a>
+            </div>
+            <div class="col-xs-4 col-sm-4 col-md-3">
+                <div class="pull-right">
+                    <a href="" class="navbar-brand smooth-scroll"><img src="images/macca.jpg" alt="logo" class="macca">
+                    </a>
+                    <a href="" class="navbar-brand smooth-scroll"><img src="images/madeena.jpg" alt="logo" class="madeena">
+                    </a>
+                    <!-- <a>
+                        <button class="btn-nav btn-green pause-btn audioBtn" type="" onclick="stopAudio()">
+                            <span class="fa fa-pause" aria-hidden="true"></span>
+                        </button>
+                        <button style="display:none;" class="btn-nav btn-green pause-btn audioBtn" type="" onclick="startAudio()">
+                            <span class="fa fa-play" aria-hidden="true"></span>
+                        </button>
+                    </a> -->
+                </div>
+            </div>
+        </div>
+        <header id="nav1-2" class="second-header">
+            <nav class="navbar" id="main-navbar" style="box-shadow: 2px 4px 10px #888888 !important;">
+                <div class="container pos" style="padding: 0;transform: translateY(17%);">
                     <div class="navbar-header">
                         <!-- Menu Button for Mobile Devices -->
-                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse2">
                             <span class="sr-only">Toggle navigation</span>
                             <span class="icon-bar"></span>
                             <span class="icon-bar"></span>
                             <span class="icon-bar"></span>
                         </button>
-                        <a href="index.html" class="navbar-brand smooth-scroll"><img src="images/newlogo.jpg" alt="logo" style="height: 70px !important;float: left">
-                            <p style="color: green;float: left;padding-top: 22px;font-size: 15px;font-weight: 700">Tamam</p>
-                        </a>
                     </div>
                     <!-- /End Navbar Header -->
-                    <div class="collapse navbar-collapse" id="navbar-collapse" style="padding-top:15px;">
+                    <div class="collapse navbar-collapse" id="navbar-collapse2">
                         <!-- Menu Links -->
-                        <ul class="nav navbar-nav navbar-right">
-                           <li><a data-scroll href="index.html" class="smooth-scroll">HOME</a></li>
+                        <ul class="nav navbar-nav navbar-left background">
+                            <li><a data-scroll href="index.html" class="smooth-scroll">HOME</a></li>
                             <li><a data-scroll href="about.html" class="smooth-scroll">ABOUT US</a></li>
                             <li><a data-scroll href="competition.html" class="smooth-scroll">COMPETITION</a></li>
                             <li><a data-scroll href="media.html" class="smooth-scroll">MEDIA</a></li>
                             <li><a data-scroll href="gallery.html" class="smooth-scroll">GALLERY</a></li>
                             <li><a data-scroll href="contact.html" class="smooth-scroll">CONTACT US</a></li>
-                            <button class="btn-nav btn-green pause-btn audioBtn" type="" onclick="stopAudio()">
+                            <li> <button class="btn-nav btn-green pause-btn audioBtn" type="" onclick="stopAudio()">
                                 <span class="fa fa-pause" aria-hidden="true"></span>
                             </button>
                             <button style="display:none;" class="btn-nav btn-green pause-btn audioBtn" type="" onclick="startAudio()">
                                 <span class="fa fa-play" aria-hidden="true"></span>
-                            </button>
+                            </button></li>
+                           
                         </ul>
                         <!-- /End Menu Links -->
                     </div>
@@ -91,58 +113,35 @@
             </nav>
             <!-- /End Navbar -->
         </header>
-        <section id="contact3-2 " class="p-y-lg contact bg-edit bg-dark first-section-row" style="padding-top: 140px !important;padding-bottom: 70px !important ">
+        <section id="contact3-2 " class="p-y-lg contact bg-edit bg-dark first-section-row" style="padding-top: 150px !important;padding-bottom: 150px !important ">
             <div class="container ">
                 <!-- Section Header -->
                 <div class="row ">
                     <div class="col-md-8 col-md-offset-2 ">
                         <div class="section-header text-center text-white wow fadeIn " style="visibility: visible; animation-name: fadeIn; ">
-                            <h2 style="font-size: 32px; ">Ready to Get Started?</h2>
+                            <h2 style="font-size: 32px; ">Contact</h2>
                             <p class="lead " style="font-size: 19px ">Tamam holy Quran award is a continuous which has taken an inspiration from Dubai holy Quran awards .This humble project takes to boost off the amplitude and value of Holy Quran to the world.</p>
                         </div>
                     </div>
                 </div>
                 <div class="row c2 text-white ">
-                    <div class="col-md-6 ">
-                        <!-- Contact Form -->
-                        <h4 class="f-w-900 m-b-md ">Drop us a line</h4>
-                        <form class="form-horizontal form-white " id="contactForm ">
-                            <!-- Notifications -->
-                            <p class="success cf text-center "><i class="fa fa-check "></i> <strong>Your message has successfully been sent.</strong></p>
-                            <p class="failed cf text-center "><i class="fa fa-exclamation-circle "></i><strong> Something went wrong!</strong></p>
-                            <div class="form-group ">
-                                <input type="text " class="form-control " id="cfName " placeholder="Name " required=" ">
-                            </div>
-                            <div class="form-group ">
-                                <input type="email " class="form-control " id="cfEmail " placeholder="Email " required=" ">
-                            </div>
-                            <div class="form-group ">
-                                <input type="text " class="form-control " id="cfSubject " placeholder="Subject " required=" ">
-                            </div>
-                            <div class="form-group ">
-                                <textarea id="cfMessage " rows="5 " class="form-control " placeholder="Your Message " required=" "></textarea>
-                            </div>
-                            <div class="form-group m-b-0 ">
-                                <button type="submit " class="btn btn-green wow pulse " data-wow-iteration="2 " style="visibility: visible; animation-iteration-count: 2; animation-name: pulse;background-color:#399a6f !important">GIVE US A SHOUT</button>
-                            </div>
-                        </form>
-                    </div>
+                   
                     <!-- /End Col -->
-                    <div class="col-md-6 ">
+                    <div class="col-md-12 ">
                         <!-- Map and Contact Info -->
-                        <h4 class="f-w-900 m-b-md ">Where we are</h4>
+                        <!-- <h4 class="f-w-900 m-b-md ">Where we are</h4> -->
                         <div class="m-b-md ">
-                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3943.803738249549!2d76.73002051537085!3d8.7101791937424!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b05eeb515555555%3A0x85256b521f7ca3f7!2sRathickal+Muslim+Jamath!5e0!3m2!1sen!2sin!4v1491467598599 " width="600 " height="360 " frameborder="0 " style="border:0 " allowfullscreen></iframe>
+                           <!--  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3943.803738249549!2d76.73002051537085!3d8.7101791937424!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b05eeb515555555%3A0x85256b521f7ca3f7!2sRathickal+Muslim+Jamath!5e0!3m2!1sen!2sin!4v1491467598599 " width="600 " height="360 " frameborder="0 " style="border:0 " allowfullscreen></iframe> -->
                             <!--  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3943.803738249549!2d76.73002051537085!3d8.7101791937424!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b05eeb515555555%3A0x85256b521f7ca3f7!2sRathickal+Muslim+Jamath!5e0!3m2!1sen!2sin!4v1491467598599 " width="600 " height="450 " frameborder="0 " style="border:0 " allowfullscreen></iframe> -->
                         </div>
-                        <div class="col-sm-6 p-l-0 mini-info ">
+                        <div class="col-sm-6 p-l-0 mini-info " style="text-align:center">
                             <h5 class="f-w-900 ">Office Address</h5>
                             <p>Varkala
                                 <br> Rathickal, Vettoor-cherunniyoor
                                 <br> Kerala 695312
                             </p>
                         </div>
-                        <div class="col-sm-6 p-l-0 mini-info ">
+                        <div class="col-sm-6 p-l-0 mini-info " style="text-align:center">
                             <h5 class="f-w-900 ">Contact Information</h5>
                             <p><strong>Local</strong>: (+012) 345 678 90
                                 <br>
@@ -157,7 +156,7 @@
             </div>
             <!-- /End Container -->
         </section>
-        <footer id="footer4-1 " class="p-y-md footer f4 bg-edit bg-grey " style="padding-top: 50px !important;padding-bottom: 0 !important;background-color: #ffffff !important ">
+        <footer id="footer4-1 " class="p-y-md footer f4 bg-edit bg-grey " style="padding-top: 50px !important;padding-bottom: 50px !important;background-color: #ffffff !important ">
             <div class="container ">
                 <div class="row c3 ">
                     <!-- Logo -->
@@ -173,12 +172,10 @@
                         </div>
                     </div>
                     <!-- Social Link -->
-                    <div class="col-sm-4 col-xs-12 " style="padding-top:32px; ">
-                        <div class="footer-social social-btn text-center inverse ">
-                            <a href="# " class="social-btn sb-facebook "><i class="fa fa-facebook "></i></a>
-                            <a href="# " class="social-btn sb-google-plus "><i class="fa fa-google-plus "></i></a>
-                            <a href="# " class="social-btn sb-twitter "><i class="fa fa-twitter "></i></a>
-                            <a href="# " class="social-btn sb-instagram "><i class="fa fa-instagram "></i></a>
+                   <div class="col-sm-4 col-xs-12 " style="text-align:center;">
+                        <div class="footer-desc ">
+                            <p >Email:info@tqa.com</p>
+                            <p class="m-t " >Copyright © 2017 Tamam</p>
                         </div>
                     </div>
                 </div>

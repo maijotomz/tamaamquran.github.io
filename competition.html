@@ -19,6 +19,7 @@
     <link rel="stylesheet" href="css/owl.carousel.css">
     <!-- Template main Css -->
     <link rel="stylesheet" href="css/style1.css">
+    <link rel="stylesheet" href="css/modalstyle.css">
     <!-- Modernizr -->
     <script src="js/modernizr-2.6.2.min.js"></script>
     <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
@@ -33,6 +34,9 @@
     <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css"> -->
     <!-- GOOGLE FONTS -->
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900,300italic,400italic,700italic,900italic" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <!-- PLUGINS STYLESHEET -->
     <link rel="stylesheet" href="css/plugins/magnific-popup.css">
     <link rel="stylesheet" href="css/plugins/owl.carousel.css">
@@ -47,41 +51,76 @@
     <!-- RESPONSIVE FIXES -->
     <link rel="stylesheet" href="css/responsive.css">
 </head>
+<style>
+.wrap {
+    display: none;
+}
+
+.wrap2 {
+    display: none;
+}
+
+.wrap3 {
+    display: none;
+}
+</style>
 
 <body data-spy="scroll" data-target="#main-navbar">
     <audio id="my_audio" src="fathiha.mp3" loop="loop"></audio>
     <div class="main-container" id="page">
-        <header id="nav1-1" style="position: fixed;z-index: 200 !important;width: 100% !important">
-            <nav class="navbar" id="main-navbar">
-                <div class="container">
+        <div class="row top-header">
+            <div class="col-xs-8 col-sm-8 col-md-9">
+                <a href="" class="navbar-brand smooth-scroll"><img src="images/mainlogo.png" class="quran-img" alt="logo">
+                    <!-- <p style="color: green;float: left;padding-top: 22px;font-size: 15px;font-weight: 700">TAMAM HOLY QURAN AWARD</p> -->
+                    <img src="images/newlogo1.png" alt="logo" class="header-text">
+                </a>
+            </div>
+            <div class="col-xs-4 col-sm-4 col-md-3">
+                <div class="pull-right">
+                    <a href="" class="navbar-brand smooth-scroll"><img src="images/macca.jpg" alt="logo" class="macca">
+                    </a>
+                    <a href="" class="navbar-brand smooth-scroll"><img src="images/madeena.jpg" alt="logo" class="madeena">
+                    </a>
+                    <!-- <a>
+                        <button class="btn-nav btn-green pause-btn audioBtn" type="" onclick="stopAudio()">
+                            <span class="fa fa-pause" aria-hidden="true"></span>
+                        </button>
+                        <button style="display:none;" class="btn-nav btn-green pause-btn audioBtn" type="" onclick="startAudio()">
+                            <span class="fa fa-play" aria-hidden="true"></span>
+                        </button>
+                    </a> -->
+                </div>
+            </div>
+        </div>
+        <header id="nav1-2" class="second-header">
+            <nav class="navbar" id="main-navbar" style="box-shadow: 2px 4px 10px #888888 !important;">
+                <div class="container pos" style="padding: 0;transform: translateY(17%);">
                     <div class="navbar-header">
                         <!-- Menu Button for Mobile Devices -->
-                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse2">
                             <span class="sr-only">Toggle navigation</span>
                             <span class="icon-bar"></span>
                             <span class="icon-bar"></span>
                             <span class="icon-bar"></span>
                         </button>
-                        <a href="index.html" class="navbar-brand smooth-scroll"><img src="images/newlogo.jpg" alt="logo" style="height: 70px !important;float: left">
-                            <p style="color: green;float: left;padding-top: 22px;font-size: 15px;font-weight: 700">Tamam</p>
-                        </a>
                     </div>
                     <!-- /End Navbar Header -->
-                    <div class="collapse navbar-collapse" id="navbar-collapse" style="padding-top:15px;">
+                    <div class="collapse navbar-collapse" id="navbar-collapse2">
                         <!-- Menu Links -->
-                        <ul class="nav navbar-nav navbar-right">
+                        <ul class="nav navbar-nav navbar-left background">
                             <li><a data-scroll href="index.html" class="smooth-scroll">HOME</a></li>
                             <li><a data-scroll href="about.html" class="smooth-scroll">ABOUT US</a></li>
                             <li><a data-scroll href="competition.html" class="smooth-scroll">COMPETITION</a></li>
                             <li><a data-scroll href="media.html" class="smooth-scroll">MEDIA</a></li>
                             <li><a data-scroll href="gallery.html" class="smooth-scroll">GALLERY</a></li>
                             <li><a data-scroll href="contact.html" class="smooth-scroll">CONTACT US</a></li>
-                            <button class="btn-nav btn-green pause-btn audioBtn" type="" onclick="stopAudio()">
+                            <li> <button class="btn-nav btn-green pause-btn audioBtn" type="" onclick="stopAudio()">
                                 <span class="fa fa-pause" aria-hidden="true"></span>
                             </button>
                             <button style="display:none;" class="btn-nav btn-green pause-btn audioBtn" type="" onclick="startAudio()">
                                 <span class="fa fa-play" aria-hidden="true"></span>
-                            </button>
+                            </button></li>
+                           
                         </ul>
                         <!-- /End Menu Links -->
                     </div>
@@ -91,55 +130,312 @@
             </nav>
             <!-- /End Navbar -->
         </header>
-        <!-- =========================
-           PORTFOLIO
-        ============================== -->
-        <section class="p-y-lg faqs schedule">
+        <section id="pricing5-1" class="p-y-lg bg-edit bg-light first-section-row" style="padding-bottom: 30px !important;padding-top: 65px !important;min-height: 749px;">
+            <div class="container">
+                <!-- Section Header -->
+                <div class="row">
+
+                    <div class="col-md-10 col-md-offset-1 c2">
+                     <h4 class="m-t f-w-900" style="text-align:center;padding-bottom:20px">Wish to register for this event?</h4>
+                        <!-- Dynamic Options -->
+                        <div class="col-md-6">
+                            <section id="timetable1-1" class="p-y-lg bg-edit" style="padding-top:0px !important;padding-bottom:0px !important">
+                               
+                                <!-- <div class="container"> -->
+                                <!-- Section Header -->
+                                <!-- Timetable Tab -->
+                                <div class="row">
+                                    <div class="col-md-12 timetable">
+                                        <ul class="nav nav-tabs m-b-md m-x-auto" role="tablist" style="margin-bottom: 0px !important;text-align: center !important;background-color: #eff1f4;">
+                                            <li role="presentation" class="active"><a href="#monday" aria-controls="monday" role="tab" data-toggle="tab" class="text-edit" style="border-radius: 0px !important;padding: 18px 78px !important;">Register</a></li>
+                                            <li role="presentation"><a href="#tuesday" aria-controls="tuesday" role="tab" data-toggle="tab" class="text-edit" style="border-radius: 0px !important;;padding: 18px 78px !important;">Sign in</a></li>
+                                        </ul>
+                                        <!-- Tab Content -->
+                                        <div class="tab-content">
+                                            <!-- Tab Panel 1 -->
+                                            <div role="tabpanel" class="tab-pane fade in active" id="monday">
+                                                <form class="form-horizontal form-white form-bg bg-grey m-t-0" id="ticketForm" role="form" >
+                                                    <p class="m-b-md f-w-700 text-center" style="padding-top:10px">Register</p>
+                                                    <p class="success tf text-center"><i class="fa fa-check"></i> <strong>You have successfully subscribed.</strong></p>
+                                                    <p class="failed tf text-center"><i class="fa fa-exclamation-circle"></i><strong> Something went wrong!</strong></p>
+                                                    <div class="form-group marg">
+                                                        <input type="text" class="form-control" id="tfName" placeholder="Name" required="">
+                                                    </div>
+                                                    <div class="form-group marg">
+                                                        <input type="email" class="form-control" id="tfEmail" placeholder="Email" required="">
+                                                    </div>
+                                                    <div class="form-group marg">
+                                                        <input type="text" class="form-control" id="tfPhone" placeholder="Phone Number" required="">
+                                                    </div>
+                                                    <div class="form-group marg">
+                                                        <input type="text" class="form-control" id="tfPhone" placeholder="Password" required="">
+                                                    </div>
+                                                    <div class="form-group marg">
+                                                        <input type="text" class="form-control" id="tfPhone" placeholder="Re-type password" required="">
+                                                    </div>
+                                                    <div class="form-group marg">
+                                                        <button type="submit" class="btn btn-shadow btn-green" style="margin-bottom:10px">REGISTER</button>
+                                                    </div>
+                                                </form>
+                                            </div>
+                                            <!-- /End Tab-Panel 1 -->
+                                            <!-- Tab Panel 2 -->
+                                            <div role="tabpanel" class="tab-pane fade" id="tuesday">
+                                                <form class="form-horizontal form-white form-bg bg-grey m-t-0" id="ticketForm" role="form" >
+                                                    <p class="m-b-md f-w-700 text-center" style="padding-top:10px">Sign in</p>
+                                                    <p class="success tf text-center"><i class="fa fa-check"></i> <strong>You have successfully subscribed.</strong></p>
+                                                    <p class="failed tf text-center"><i class="fa fa-exclamation-circle"></i><strong> Something went wrong!</strong></p>
+                                                    <div class="form-group marg">
+                                                        <input type="email" class="form-control" id="tfEmail" placeholder="Email" required="">
+                                                    </div>
+                                                    <div class="form-group marg">
+                                                        <input type="text" class="form-control" id="tfPhone" placeholder="Password" required="">
+                                                    </div>
+                                                    <div class="form-group marg">
+                                                        <button type="submit" class="btn btn-shadow btn-green" style="margin-bottom:10px">SIGN IN</button>
+                                                    </div>
+                                                </form>
+                                            </div>
+                                            <!-- /End Tab-Panel 2 -->
+                                            <!-- Tab Panel 3 -->
+                                            <!-- /End Tab Panel 6 -->
+                                        </div>
+                                        <!-- /End Tab Content -->
+                                    </div>
+                                    <!-- /End Col-12 Timetable -->
+                                </div>
+                                <!-- /End Row -->
+                                <!-- Section Footer -->
+                                <!-- </div> -->
+                                <!-- /End Main Container -->
+                            </section>
+                            <!-- <button class="btn1" style="border:none;background-color:#fafafa;padding:0"> <a  class="btn btn-shadow btn-green text-uppercase">close </a></button> -->
+                            <!--   <div class="">
+                                <h4 class="m-t f-w-900">Wish to register for this event?</h4>
+                                <p class="p-opacity m-b-md" style="margin-bottom:15px !important">If you wish to register for this event then please click on the register button </span>
+                                </p>
+                                <button class="btn1" id="registerbtn" style="border:none;background-color:#fafafa;padding:0;outline: 0 !important;"> <a class="btn btn-shadow btn-green text-uppercase">Register </a></button>
+                                <button class="closebtns" id="closebtn" style="border:none;background-color:#fafafa;padding:0;outline: 0 !important;"> <a class="btn btn-shadow btn-green text-uppercase">Close</a></button>
+                                <p class="p-opacity m-b-md" id="signinbtn">Already a user? <span style="color: #419a72;font-weight: bold;cursor:pointer" class="btn2">Sign in</span></p>
+                                <button class="closebtns2" id="closebtn2" style="border:none;background-color:#fafafa;padding:0;outline: 0 !important;"> <a class="btn btn-shadow btn-green text-uppercase">Close</a></button>
+                            </div>
+                            <div class="wrap">
+                                <form class="form-horizontal form-white form-bg bg-grey m-t-0" id="ticketForm" role="form" style="border-radius:10px;">
+                                    <p class="m-b-md f-w-700 text-center" style="padding-top:10px">Register</p>
+                                    <p class="success tf text-center"><i class="fa fa-check"></i> <strong>You have successfully subscribed.</strong></p>
+                                    <p class="failed tf text-center"><i class="fa fa-exclamation-circle"></i><strong> Something went wrong!</strong></p>
+                                    <div class="form-group marg">
+                                        <input type="text" class="form-control" id="tfName" placeholder="Name" required="">
+                                    </div>
+                                    <div class="form-group marg">
+                                        <input type="email" class="form-control" id="tfEmail" placeholder="Email" required="">
+                                    </div>
+                                    <div class="form-group marg">
+                                        <input type="text" class="form-control" id="tfPhone" placeholder="Phone Number" required="">
+                                    </div>
+                                    <div class="form-group marg">
+                                        <input type="text" class="form-control" id="tfPhone" placeholder="Password" required="">
+                                    </div>
+                                    <div class="form-group marg">
+                                        <input type="text" class="form-control" id="tfPhone" placeholder="Re-type password" required="">
+                                    </div>
+                                   
+                                    <div class="form-group marg">
+                                        <button type="submit" class="btn btn-shadow btn-green" style="margin-bottom:10px">REGISTER</button>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="wrap2">
+                                <form class="form-horizontal form-white form-bg bg-grey m-t-0" id="ticketForm" role="form" style="border-radius:10px;">
+                                    <p class="m-b-md f-w-700 text-center" style="padding-top:10px">Sign in</p>
+                                    <p class="success tf text-center"><i class="fa fa-check"></i> <strong>You have successfully subscribed.</strong></p>
+                                    <p class="failed tf text-center"><i class="fa fa-exclamation-circle"></i><strong> Something went wrong!</strong></p>
+                                   
+                                    <div class="form-group marg">
+                                        <input type="email" class="form-control" id="tfEmail" placeholder="Email" required="">
+                                    </div>
+                                    <div class="form-group marg">
+                                        <input type="text" class="form-control" id="tfPhone" placeholder="Password" required="">
+                                    </div>
+                                    
+                                    <div class="form-group marg">
+                                        <button type="submit" class="btn btn-shadow btn-green" style="margin-bottom:10px">SIGN IN</button>
+                                    </div>
+                                </form>
+                            </div> -->
+                        </div>
+                        <!--/End Col Options -->
+                        <!-- Dynamic Price -->
+                        <div class="col-md-3" style="margin-bottom:20px;">
+                            <div class="pricing-table ovride">
+                                <ul class="list-unstyled" style="text-align:center">
+                                    <li class="price text-edit" style="font-size: 30px !important;background-color:#56b68b"><span style="font-size: 17px;">Application form</span></li>
+                                </ul>
+                                <div style="padding-left:15px;padding-right:15px;margin-bottom: 20px;margin-top: 20px;text-align: center;">You can download the application form which is available in pdf format.Please click on the download button and download the pdf file.</div>
+                                <div style="padding-left:10px;padding-right:10px"><a href="https://www.dropbox.com/s/ipvmr0nduhtyv9e/Get%20Started%20with%20Dropbox.pdf?dl=1" class="btn btn-shadow btn-blue text-uppercase" style="font-size: 14px;width:100%">Download</a></div>
+                            </div>
+                        </div>
+                        <!-- /End Col Price -->
+                        <div class="col-md-3" style="margin-bottom:20px;">
+                            <div class="pricing-table ovride">
+                                <ul class="list-unstyled" style="text-align:center">
+                                    <li class="price text-edit" style="font-size: 30px !important;background-color:#56b68b;padding-top:15px;padding-bottom:15px"><span style="font-size: 17px;">Competition Criteria</span></li>
+                                </ul>
+                                <div style="padding-left:15px;padding-right:15px;margin-bottom: 20px;margin-top: 20px;text-align: center;">You can download the Competition Criteria which is available in pdf format.Please click on the download button and download the pdf file.</div>
+                                <div style="padding-left:10px;padding-right:10px"><a href="https://www.dropbox.com/s/ipvmr0nduhtyv9e/Get%20Started%20with%20Dropbox.pdf?dl=1" class="btn btn-shadow btn-blue text-uppercase" style="font-size: 14px;width:100%">Download</a></div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /End Col-10 -->
+                </div>
+                <!-- /End Row -->
+            </div>
+            <!-- /End Container -->
+        </section>
+        <!--  <section id="cta4" class="p-y-md cta bg-edit bg-dark content-align-md first-section-row" style="background-color:#f7f7f7 !important;padding-top: 110px !important;">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-12">
-                        <h4 class="m-b-md">Hifzul Quran 2016</h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis dolore nisi odit adipisci illo cupiditate, laborum dolorum numquam deleniti hic in maxime repellat libero laudantium sed mollitia minus ratione dignissimos, voluptatum rerum. Facilis voluptate delectus perferendis reiciendis ab, ipsa nobis fuga ipsum sapiente eos expedita eum. Iure laudantium voluptatum iusto, repudiandae voluptate, alias repellat sapiente debitis soluta fuga reprehenderit. Unde a necessitatibus natus, quis odio quidem nesciunt animi delectus sunt pariatur facere molestias id odit quam fugit inventore nihil mollitia. Aperiam voluptates omnis neque sint officia optio, itaque pariatur illo velit nisi quae provident, illum ut accusamus a placeat, minima. Dolores et maiores accusamus doloremque quae, ullam amet autem illo doloribus libero repudiandae culpa aut aperiam rerum. Labore dolores, ut fugit unde a maxime possimus in, eaque temporibus laborum neque assumenda rem, consequatur eligendi et laboriosam distinctio eius cumque ex repellat ab? Quis fugiat in blanditiis officiis illum doloremque reprehenderit a provident officia autem reiciendis velit maiores, nisi magni, accusamus quae, temporibus error non deleniti amet earum. Nisi, harum quaerat autem ducimus molestias, expedita laboriosam in illum. Iure blanditiis, corporis laudantium ullam sunt accusantium ut velit id, ipsa nostrum laboriosam cum quae perspiciatis fuga adipisci voluptatum repudiandae, omnis esse? Dolore, id.</p>
-                        <!--  <ul class="m-t-md">
-                            <li class="m-b"><p><strong>Nulla officiis perferendis veniam.</strong> Maiores nobis autem amet cumque, vero obcaecati voluptatibus repudiandae consequatur molestias quibusdam, minima, totam dolor non! Ut, esse aliquam eius excepturi non tempora vitae porro sed optio corporis laborum vel nemo iusto incidunt odio ipsam neque perferendis nulla aspernatur. Earum voluptas distinctio ex adipisci, veniam corporis recusandae et commodi ratione, obcaecati exercitationem, beatae quaerat maxime praesentium incidunt omnis!</p></li>
-                            <li class="m-b"><p><strong>Maiores quis ipsa quos pariatur, laudantium aut.</strong>  Deleniti exercitationem minus natus suscipit ipsa est voluptate quas iusto perferendis fuga, sequi vel necessitatibus, illum sunt explicabo aliquid blanditiis debitis delectus, accusantium? Repudiandae earum eos aperiam quod a, iste suscipit rerum, quia blanditiis aliquid, laboriosam magnam. Autem ad quam explicabo, nihil id minima quod velit dignissimos libero, officia laudantium, suscipit tempore vitae similique veritatis!</p></li>
-                            <li class="m-b"><p><strong> Deserunt impedit, quas, amet perspiciatis qui.</strong> quia cum illo magni accusamus minus perferendis. Totam, ipsam id vitae, in delectus saepe, officiis commodi, consequatur dolorem reiciendis error. Ratione quia sequi debitis praesentium culpa rem minima eum assumenda et qui! Ipsa, doloribus facilis voluptatibus ut tempore qui molestias. Aut expedita eaque voluptates laborum, dolorum iusto accusantium at a nostrum perferendis voluptatem reiciendis, minus similique.</p></li>
-                            <li><p><strong>Voluptatibus neque blanditiis.</strong> Dolorem error iure adipisci ut tenetur quam saepe vel cumque vitae libero repudiandae nisi, quia doloribus dolores nam fugiat id beatae eaque ducimus iusto, debitis maiores inventore. Provident soluta quo molestias fuga distinctio. Inventore incidunt omnis error, consequuntur voluptas qui vero minima recusandae nemo sit, accusantium possimus reiciendis obcaecati eos impedit optio, pariatur. Temporibus quod qui perferendis sequi quas?</p></li>
-                        </ul>
- -->
-                        <h4 class="p-t-md">Quran Recitation 2016</h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam beatae laboriosam quisquam voluptatibus quibusdam ad eius officia, provident architecto. Ipsa reprehenderit, tempora in quisquam modi ab. Ipsum unde eos quisquam totam quod distinctio asperiores in, esse a. Commodi quibusdam vel, voluptates temporibus assumenda in tempora illum esse, nam debitis ratione quam est dolorem obcaecati, quas eum inventore vero molestias, error ea similique. Nisi veritatis incidunt fugiat fuga excepturi ratione aliquam aperiam eveniet provident, ipsum culpa quis quaerat, sequi reprehenderit delectus fugit in rem quos. A quaerat odit asperiores tempora optio dolores voluptates, eligendi quia ipsa excepturi beatae amet facere commodi, animi blanditiis eius et.</p>
-                        <h4 class="p-t-md">Hifzul Quran 2017</h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam beatae laboriosam quisquam voluptatibus quibusdam ad eius officia, provident architecto. Ipsa reprehenderit, tempora in quisquam modi ab. Ipsum unde eos quisquam totam quod distinctio asperiores in, esse a. Commodi quibusdam vel, voluptates temporibus assumenda in tempora illum esse, nam debitis ratione quam est dolorem obcaecati, quas eum inventore vero molestias, error ea similique. Nisi veritatis incidunt fugiat fuga excepturi ratione aliquam aperiam eveniet provident, ipsum culpa quis quaerat, sequi reprehenderit delectus fugit in rem quos. A quaerat odit asperiores tempora optio dolores voluptates, eligendi quia ipsa excepturi beatae amet facere commodi, animi blanditiis eius et.</p>
-                         <h4 class="p-t-md">Quran Recitation 2017</h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam beatae laboriosam quisquam voluptatibus quibusdam ad eius officia, provident architecto. Ipsa reprehenderit, tempora in quisquam modi ab. Ipsum unde eos quisquam totam quod distinctio asperiores in, esse a. Commodi quibusdam vel, voluptates temporibus assumenda in tempora illum esse, nam debitis ratione quam est dolorem obcaecati, quas eum inventore vero molestias, error ea similique. Nisi veritatis incidunt fugiat fuga excepturi ratione aliquam aperiam eveniet provident, ipsum culpa quis quaerat, sequi reprehenderit delectus fugit in rem quos. A quaerat odit asperiores tempora optio dolores voluptates, eligendi quia ipsa excepturi beatae amet facere commodi, animi blanditiis eius et.</p>
-                        
+                    <div class="col-md-10 col-md-offset-1 outline no-border y-middle c2">
+                        <div class="col-md-6" style="text-align:center">
+                            <a href="#hero11" class="btn btn-shadow btn-blue btn-md smooth-scroll" style="color:white !important;margin-bottom: 8px;" data-toggle="modal" data-target="#myModal">Register</a>
+                            <p class="text-white m-b-0" style="color:black !important">Already registerd user?<span data-toggle="modal" data-target="#mysignModal" style="cursor:pointer;color:#499e78;padding-left:5px;">Sign in</span></p>
+                        </div>
+                        <div class="col-md-6 text-center">
+                            <a href="#hero11" class="btn btn-shadow btn-blue btn-md smooth-scroll" style="color:white !important;margin-bottom: 22px">Download pdf</a>
+
+                        </div>
                     </div>
                 </div>
             </div>
+        </section> -->
+        <section id="timeline2-1" class="p-y-lg bg-edit bg-dark first-section-row" style="outline-offset: -3px;padding-top: 70px !important;padding-bottom: 70px !important">
+            <div class="container">
+                <!-- Section Header -->
+                <div class="row">
+                    <div class="col-md-8 col-md-offset-2">
+                        <div class="section-header text-center text-white wow fadeIn" style="visibility: visible; animation-name: fadeIn;">
+                            <h2 style="font-size: 32px;">Event Schedule</h2>
+                            <p class="lead" style="font-size: 19px;" ">Tamam holy Quran award is a continuous which has taken an inspiration from Dubai holy Quran awards .This humble project takes to boost off the amplitude and value of Holy Quran to the world.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row ">
+                    <!-- Timeline Nav -->
+                    <div class="col-md-12 timeline-tabs ">
+                        <ul class="nav nav-tabs m-b-md " role="tablist ">
+                            <li role="presentation " class="active "><a href="#day1 " role="tab " data-toggle="tab " class="text-edit ">Day 1</a></li>
+                            <li role="presentation "><a href="#day2 " role="tab " data-toggle="tab " class="text-edit ">Day 2</a></li>
+                            <!-- <li role="presentation "><a href="#day3 " role="tab " data-toggle="tab " class="text-edit ">Day 3</a></li> -->
+                        </ul>
+                    </div>
+                    <!-- Timeline Panels -->
+                    <div class="tab-content ">
+                        <!-- Tab-Panel 1 -->
+                        <div role="tabpanel " class="tab-pane fade in active " id="day1 ">
+                            <div class="col-md-6 col-md-offset-3 text-white ">
+                                <ul class="timeline ">
+                                    <li class="event " data-date="9:30 - 10:30am ">
+                                        <h5 class="f-w-900 ">Registration</h5>
+                                        <p>Get here on time, it's first come first serve. Be late, get turned away.</p>
+                                    </li>
+                                    <li class="event " data-date="10:30 - 11:45am ">
+                                        <h5 class="f-w-900 ">Opening Conference</h5>
+                                        <p>Get ready for an exciting event, this will kick off in amazing fashion with MOP &amp; Busta Rhymes as an opening show.</p>
+                                    </li>
+                                    <li class="event " data-date="12:30 - 2:00pm ">
+                                        <h5 class="f-w-900 ">Launch Break</h5>
+                                        <p>Minus facilis tempore, laboriosam libero tenetur quam porro recusandae ipsam vel doloremque explicabo.</p>
+                                    </li>
+                                    <!-- <li class="event " data-date="2:00 - 4:00pm ">
+                                        <h5 class="f-w-900 ">Real time Javascript</h5>
+                                        <p> Perferendis quas nihil dolorem similique velit magnam debitis in repudiandae officiis consequuntur tempora praesentium.</p>
+                                    </li>
+                                    <li class="event " data-date="4:30 - 6:30pm ">
+                                        <h5 class="f-w-900 ">Master Web Layout</h5>
+                                        <p>Commodi unde eveniet vero esse aliquam et enim dolorum necessitatibus mollitia vitae, sapiente inventore.</p>
+                                    </li> -->
+                                </ul>
+                            </div>
+                            <!-- /End Conl -->
+                        </div>
+                        <!-- /End Tab-Panel 1 -->
+                        <!-- Tab-Panel 2 -->
+                         <div role="tabpanel " class="tab-pane fade in " id="day2 ">
+                            <div class="col-md-6 col-md-offset-3 text-white ">
+                                <ul class="timeline ">
+                                    <li class="event " data-date="9:30 - 10:30am ">
+                                        <h5 class="f-w-900 ">Registration</h5>
+                                        <p>Get here on time, it's first come first serve. Be late, get turned away.</p>
+                                    </li>
+                                    <li class="event " data-date="10:30 - 11:45am ">
+                                        <h5 class="f-w-900 ">Opening Conference</h5>
+                                        <p>Get ready for an exciting event, this will kick off in amazing fashion with MOP &amp; Busta Rhymes as an opening show.</p>
+                                    </li>
+                                    <li class="event " data-date="12:30 - 2:00pm ">
+                                        <h5 class="f-w-900 ">Launch Break</h5>
+                                        <p>Minus facilis tempore, laboriosam libero tenetur quam porro recusandae ipsam vel doloremque explicabo.</p>
+                                    </li>
+                                    <!-- <li class="event " data-date="2:00 - 4:00pm ">
+                                        <h5 class="f-w-900 ">Real time Javascript</h5>
+                                        <p> Perferendis quas nihil dolorem similique velit magnam debitis in repudiandae officiis consequuntur tempora praesentium.</p>
+                                    </li>
+                                    <li class="event " data-date="4:30 - 6:30pm ">
+                                        <h5 class="f-w-900 ">Master Web Layout</h5>
+                                        <p>Commodi unde eveniet vero esse aliquam et enim dolorum necessitatibus mollitia vitae, sapiente inventore.</p>
+                                    </li> -->
+                                </ul>
+                            </div>
+                            <!-- /End Conl -->
+                        </div>
+                        <!-- /End of Tab-panel 2 -->
+                        <!-- Tab-Panel 3 -->
+                        <div role="tabpanel " class="tab-pane fade " id="day3 ">
+                            <div class="col-md-6 col-md-offset-3 text-white ">
+                                <ul class="timeline ">
+                                    <li class="event " data-date="9:00 - 10:30pm ">
+                                        <h5 class="f-w-900 ">Instant Web Application</h5>
+                                        <p>Get here on time, it's first come first serve. Be late, get turned away.</p>
+                                    </li>
+                                    <li class="event " data-date="10:30 - 11:30pm ">
+                                        <h5 class="f-w-900 ">The future of Javascript</h5>
+                                        <p>Get ready for an exciting event, this will kick off in amazing fashion with MOP &amp; Busta Rhymes as an opening show.</p>
+                                    </li>
+                                    <li class="event " data-date="11:30 - 12:30pm ">
+                                        <h5 class="f-w-900 ">Closing Conference</h5>
+                                        <p> Repellat quos quisquam dolorem nobis repellendus, aperiam, officia eius facere exercitationem totam fugiat ratione.</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- /End Tab-panel 3 -->
+                    </div>
+                    <!-- /End Tab-Content -->
+                </div>
+                <!-- /End Row -->
+            </div>
+            <!-- /End Container -->
         </section>
-        <footer id="footer4-1 " class="p-y-md footer f4 bg-edit bg-grey " style="padding-top: 50px !important;padding-bottom: 50 !important;background-color: #56b68b !important; ">
+    
+        <footer id="footer4-1 " class="p-y-md footer f4 bg-edit bg-grey " style="padding-top: 50px !important;padding-bottom: 50px !important;background-color: #ffffff !important ">
             <div class="container ">
                 <div class="row c3 ">
                     <!-- Logo -->
                     <div class="col-sm-3 col-xs-12 center-sm ">
-                        <img src="images/newlogo.jpg " alt="logo " style="height: 100px !important;float: left; border-radius: 68px;">
-                        <p style="color: white;float: left;padding-top: 32px;padding-left: 6px;font-size: 18px; ">Tamam</p>
+                        <img src="images/newlogo.jpg " alt="logo " style="height: 100px !important;float: left; ">
+                        <p style="color: green;float: left;padding-top: 32px;padding-left: 6px;font-size: 18px; ">Tamam</p>
                     </div>
                     <!-- Content -->
                     <div class="col-sm-5 col-xs-12 ">
                         <div class="footer-desc ">
-                            <p style="color:white">Tamam holy Quran award is a continuous which has taken an inspiration from Dubai holy Quran awards .This humble project takes to boost off the amplitude and value of Holy Quran to the world.</p>
-                            <p class="m-t " style="color:white">Copyright © 2017 Tamam</p>
+                            <p>Tamam holy Quran award is a continuous which has taken an inspiration from Dubai holy Quran awards .This humble project takes to boost off the amplitude and value of Holy Quran to the world.</p>
+                            <p class="m-t ">Copyright © 2017 Tamam</p>
                         </div>
                     </div>
                     <!-- Social Link -->
-                    <div class="col-sm-4 col-xs-12 " style="padding-top:32px; ">
-                        <div class="footer-social social-btn text-center inverse ">
-                            <a href="# " class="social-btn sb-facebook "><i class="fa fa-facebook "></i></a>
-                            <a href="# " class="social-btn sb-google-plus "><i class="fa fa-google-plus "></i></a>
-                            <a href="# " class="social-btn sb-twitter "><i class="fa fa-twitter "></i></a>
-                            <a href="# " class="social-btn sb-instagram "><i class="fa fa-instagram "></i></a>
+                     <div class="col-sm-4 col-xs-12 " style="text-align:center;">
+                        <div class="footer-desc ">
+                            <p >Email:info@tqa.com</p>
+                            <p class="m-t " >Copyright © 2017 Tamam</p>
                         </div>
                     </div>
                 </div>
@@ -148,49 +444,84 @@
             <!-- /End Container -->
         </footer>
     </div>
-    <!-- /End Main Container -->
-    <!-- Back to Top Button -->
-    <!--
-    <a href="#" class="top">Top</a>
-    -->
+
     <!-- =========================
          SCRIPTS 
     ============================== -->
-    <script src="js/smooth-scroll.js"></script>
+    <script src="js/smooth-scroll.js "></script>
     <script>
     smoothScroll.init();
     </script>
-    <script id="twitter-wjs" src="https://platform.twitter.com/widgets.js"></script>
-    <script src="js/plugins/jquery1.11.2.min.js"></script>
-    <script src="js/plugins/bootstrap.min.js"></script>
-    <script src="js/plugins/jquery.easing.1.3.min.js"></script>
-    <script src="js/plugins/jquery.countTo.js"></script>
-    <script src="js/plugins/jquery.formchimp.min.js"></script>
-    <script src="js/plugins/jquery.jCounter-0.1.4.js"></script>
-    <script src="js/plugins/jquery.magnific-popup.min.js"></script>
-    <script src="js/plugins/jquery.vide.min.js"></script>
-    <script src="js/plugins/owl.carousel.min.js"></script>
-    <script src="js/plugins/spectragram.min.js"></script>
-    <script src="js/plugins/twitterFetcher_min.js"></script>
-    <script src="js/plugins/wow.min.js"></script>
-    <script src="js/plugins/picker.js"></script>
-    <script src="js/plugins/picker.date.js"></script>
-    <!-- Custom Script -->
-    <script src="js/custom.js"></script>
-    <!--  <iframe id="rufous-sandbox" scrolling="no" frameborder="0" allowtransparency="true" allowfullscreen="true" style="position: absolute; visibility: hidden; display: none; width: 0px; height: 0px; padding: 0px; border: none;"></iframe> -->
+    <script>
+        document.getElementById('closebtn').style.display="none ";
+        document.getElementById('closebtn2').style.display="none ";
+    </script>
     <script>
     $(document).ready(function() {
-        // $("#my_audio").get(0).play();
+            $('.btn1').click(function() {
+            $('.wrap').slideToggle(400);
+            $('#registerbtn').hide();
+            $('#closebtn').show();
+            $('#closebtn2').hide();
+            $('#signinbtn').hide();
+        });
     });
-
+    $(document).ready(function() {
+            $('.closebtns').click(function() {
+            $('.wrap').slideToggle(400);
+            $('#registerbtn').show();
+            $('#closebtn').hide();
+            $('#closebtn2').hide();
+            $('#signinbtn').show();
+        });
+    });
+    $(document).ready(function() {
+            $('.closebtns2').click(function() {
+            $('.wrap2').slideToggle(400);
+            $('#registerbtn').show();
+            $('#closebtn').hide();
+            $('#closebtn2').hide();
+            $('#signinbtn').show();
+        });
+    });
+    $(document).ready(function() {
+            $('.btn2').click(function() {
+            $('.wrap2').slideToggle(400);
+            $('#registerbtn').hide();
+            $('#closebtn').hide();
+            $('#closebtn2').show();
+            $('#signinbtn').hide();
+        });
+    });
+    </script>
+    <script id="twitter-wjs " src="https://platform.twitter.com/widgets.js "></script>
+    <script src="js/plugins/jquery1.11.2.min.js "></script>
+    <script src="js/plugins/bootstrap.min.js "></script>
+    <script src="js/plugins/jquery.easing.1.3.min.js "></script>
+    <script src="js/plugins/jquery.countTo.js "></script>
+    <script src="js/plugins/jquery.formchimp.min.js "></script>
+    <script src="js/plugins/jquery.jCounter-0.1.4.js "></script>
+    <script src="js/plugins/jquery.magnific-popup.min.js "></script>
+    <script src="js/plugins/jquery.vide.min.js "></script>
+    <script src="js/plugins/owl.carousel.min.js "></script>
+    <script src="js/plugins/spectragram.min.js "></script>
+    <script src="js/plugins/twitterFetcher_min.js "></script>
+    <script src="js/plugins/wow.min.js "></script>
+    <script src="js/plugins/picker.js "></script>
+    <script src="js/plugins/picker.date.js "></script>
+    <!-- Custom Script -->
+    <script src="js/custom.js "></script>
+    <script>
+    $(document).ready(function() {
+        // $("#my_audio ").get(0).play();
+    });
     function stopAudio() {
-        $("#my_audio").get(0).pause();
-        $(".audioBtn").toggle();
+        $("#my_audio ").get(0).pause();
+        $(".audioBtn ").toggle();
     }
-
     function startAudio() {
-        $("#my_audio").get(0).play();
-        $(".audioBtn").toggle();
+        $("#my_audio ").get(0).play();
+        $(".audioBtn ").toggle();
     }
     </script>
 </body>
