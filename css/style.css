@@ -4456,7 +4456,7 @@ input.toggle-round-flat:checked + label:after {
 .timetable .nav-tabs>li {
     display: inline-block;
     float: none;
-    margin-bottom: 10px;
+    /*margin-bottom: 10px;*/
 }
 
 .timetable .nav-tabs>li>a {
@@ -4479,7 +4479,7 @@ input.toggle-round-flat:checked + label:after {
 .timetable .nav-tabs>li.active>a:hover {
     color: #555;
     cursor: default;
-    background-color: #eee;
+    background-color: #eff1f4;
     border-radius: 4px;
     border: none;
     opacity: 1;
