@@ -88,8 +88,9 @@
 }
 
 .marq-images {
-    width: 60px !important;
-    transform: translateY(17%);
+    width: 150px !important;
+    transform: translateY(2%);
+    padding: 10px;
 }
 
 .news-section {
@@ -98,7 +99,7 @@
 }
 
 .news-section-card {
-    max-height: 190px;
+    max-height: 185px;
 }
 
 .marq-news-section {
@@ -133,6 +134,7 @@
     color: white;
     font-weight: bold;
 }
+
 .carousel-toptext1 {
     position: absolute;
     top: 130px;
@@ -145,3 +147,8 @@
 
 
 /********************************************************/
+
+.marg {
+    margin-left: 15px !important;
+    margin-right: 15px !important;
+}

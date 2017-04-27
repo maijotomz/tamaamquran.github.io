@@ -20,7 +20,6 @@
     <!-- Template main Css -->
     <link rel="stylesheet" href="css/style1.css">
     <link rel="stylesheet" href="css/modalstyle.css">
-
     <!-- Modernizr -->
     <script src="js/modernizr-2.6.2.min.js"></script>
     <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
@@ -52,6 +51,19 @@
     <!-- RESPONSIVE FIXES -->
     <link rel="stylesheet" href="css/responsive.css">
 </head>
+<style>
+.wrap {
+    display: none;
+}
+
+.wrap2 {
+    display: none;
+}
+
+.wrap3 {
+    display: none;
+}
+</style>
 
 <body data-spy="scroll" data-target="#main-navbar">
     <audio id="my_audio" src="fathiha.mp3" loop="loop"></audio>
@@ -96,12 +108,111 @@
             </nav>
             <!-- /End Navbar -->
         </header>
-        <!-- =========================
-           PORTFOLIO
-        ============================== -->
-        <!-- Trigger the modal with a button -->
-        
-        <section id="cta4" class="p-y-md cta bg-edit bg-dark content-align-md first-section-row" style="background-color:#f7f7f7 !important;padding-top: 110px !important;">
+        <section id="pricing5-1" class="p-y-lg bg-edit bg-light first-section-row">
+            <div class="container">
+                <!-- Section Header -->
+                <div class="row">
+                    <div class="col-md-8 col-md-offset-2">
+                        <div class="section-header text-center wow fadeIn" style="visibility: visible; animation-name: fadeIn;">
+                            <!-- <h2>Pricing Packages</h2> -->
+                            <!-- <p class="lead">Nesciunt eaque porro distinctio eveniet aliquam eumin ipsa vite expedita, accusantium, iure earum impedit adipisci itaque facilis beatae iure.</p> -->
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-10 col-md-offset-1 c2">
+                        <!-- Dynamic Options -->
+                        <div class="col-md-6">
+                            <!-- <button class="btn1" style="border:none;background-color:#fafafa;padding:0"> <a  class="btn btn-shadow btn-green text-uppercase">close </a></button> -->
+                            <div class="">
+                                <h4 class="m-t f-w-900">Wish to register for this event?</h4>
+                                <p class="p-opacity m-b-md" style="margin-bottom:15px !important">If you wish to register for this event then please click on the register button </span>
+                                </p>
+                                <button class="btn1" id="registerbtn" style="border:none;background-color:#fafafa;padding:0;outline: 0 !important;"> <a class="btn btn-shadow btn-green text-uppercase">Register </a></button>
+                                <button class="closebtns" id="closebtn" style="border:none;background-color:#fafafa;padding:0;outline: 0 !important;"> <a class="btn btn-shadow btn-green text-uppercase">Close</a></button>
+                                <p class="p-opacity m-b-md" id="signinbtn">Already a user? <span style="color: #419a72;font-weight: bold;cursor:pointer" class="btn2">Sign in</span></p>
+                                <button class="closebtns2" id="closebtn2" style="border:none;background-color:#fafafa;padding:0;outline: 0 !important;"> <a class="btn btn-shadow btn-green text-uppercase">Close</a></button>
+                            </div>
+                            <div class="wrap">
+                                <form class="form-horizontal form-white form-bg bg-grey m-t-0" id="ticketForm" role="form" style="border-radius:10px;">
+                                    <p class="m-b-md f-w-700 text-center" style="padding-top:10px">Register</p>
+                                    <p class="success tf text-center"><i class="fa fa-check"></i> <strong>You have successfully subscribed.</strong></p>
+                                    <p class="failed tf text-center"><i class="fa fa-exclamation-circle"></i><strong> Something went wrong!</strong></p>
+                                    <div class="form-group marg">
+                                        <input type="text" class="form-control" id="tfName" placeholder="Name" required="">
+                                    </div>
+                                    <div class="form-group marg">
+                                        <input type="email" class="form-control" id="tfEmail" placeholder="Email" required="">
+                                    </div>
+                                    <div class="form-group marg">
+                                        <input type="text" class="form-control" id="tfPhone" placeholder="Phone Number" required="">
+                                    </div>
+                                    <div class="form-group marg">
+                                        <input type="text" class="form-control" id="tfPhone" placeholder="Password" required="">
+                                    </div>
+                                    <div class="form-group marg">
+                                        <input type="text" class="form-control" id="tfPhone" placeholder="Re-type password" required="">
+                                    </div>
+                                   <!--  <div class="form-group marg m-b">
+                                        <input type="text" class="form-control" id="tfTicket" name="ticket" placeholder="Select your ticket on the right" disabled="">
+                                    </div> -->
+                                    <div class="form-group marg">
+                                        <button type="submit" class="btn btn-shadow btn-green" style="margin-bottom:10px">REGISTER</button>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="wrap2">
+                                <form class="form-horizontal form-white form-bg bg-grey m-t-0" id="ticketForm" role="form" style="border-radius:10px;">
+                                    <p class="m-b-md f-w-700 text-center" style="padding-top:10px">Sign in</p>
+                                    <p class="success tf text-center"><i class="fa fa-check"></i> <strong>You have successfully subscribed.</strong></p>
+                                    <p class="failed tf text-center"><i class="fa fa-exclamation-circle"></i><strong> Something went wrong!</strong></p>
+                                   <!--  <div class="form-group marg">
+                                        <input type="text" class="form-control" id="tfName" placeholder="Name" required="">
+                                    </div> -->
+                                    <div class="form-group marg">
+                                        <input type="email" class="form-control" id="tfEmail" placeholder="Email" required="">
+                                    </div>
+                                    <div class="form-group marg">
+                                        <input type="text" class="form-control" id="tfPhone" placeholder="Password" required="">
+                                    </div>
+                                    <!-- <div class="form-group marg m-b">
+                                        <input type="text" class="form-control" id="tfTicket" name="ticket" placeholder="Select your ticket on the right" disabled="">
+                                    </div> -->
+                                    <div class="form-group marg">
+                                        <button type="submit" class="btn btn-shadow btn-green" style="margin-bottom:10px">SIGN IN</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                        <!--/End Col Options -->
+                        <!-- Dynamic Price -->
+                        <div class="col-md-3" style="margin-bottom:20px">
+                            <div class="pricing-table ovride">
+                                <ul class="list-unstyled" style="text-align:center">
+                                    <li class="price text-edit" style="font-size: 30px !important;background-color:#56b68b"><span>PDF</span></li>
+                                </ul>
+                                <div style="padding-left:15px;padding-right:15px;margin-bottom: 20px;margin-top: 20px;text-align: center;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean ac mollis risus. Nulla ornare ipsum idlacus vehicula sitame</div>
+                                <div style="padding-left:10px;padding-right:10px"><a href="https://www.dropbox.com/s/ipvmr0nduhtyv9e/Get%20Started%20with%20Dropbox.pdf?dl=1" class="btn btn-shadow btn-blue text-uppercase" style="font-size: 14px;width:100%">Download</a></div>
+                            </div>
+                        </div>
+                        <!-- /End Col Price -->
+                        <div class="col-md-3" style="margin-bottom:20px">
+                            <div class="pricing-table ovride">
+                                <ul class="list-unstyled" style="text-align:center">
+                                    <li class="price text-edit" style="font-size: 30px !important;background-color:#56b68b;padding-top:15px;padding-bottom:15px"><span>PDF</span></li>
+                                </ul>
+                                <div style="padding-left:15px;padding-right:15px;margin-bottom: 20px;margin-top: 20px;text-align: center;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean ac mollis risus. Nulla ornare ipsum idlacus vehicula sitame</div>
+                                <div style="padding-left:10px;padding-right:10px"><a href="https://www.dropbox.com/s/ipvmr0nduhtyv9e/Get%20Started%20with%20Dropbox.pdf?dl=1" class="btn btn-shadow btn-blue text-uppercase" style="font-size: 14px;width:100%">Download</a></div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /End Col-10 -->
+                </div>
+                <!-- /End Row -->
+            </div>
+            <!-- /End Container -->
+        </section>
+        <!--  <section id="cta4" class="p-y-md cta bg-edit bg-dark content-align-md first-section-row" style="background-color:#f7f7f7 !important;padding-top: 110px !important;">
             <div class="container">
                 <div class="row">
                     <div class="col-md-10 col-md-offset-1 outline no-border y-middle c2">
@@ -116,8 +227,7 @@
                     </div>
                 </div>
             </div>
-            <!-- /End Container -->
-        </section>
+        </section> -->
         <section id="timeline2-1" class="p-y-lg bg-edit bg-dark first-section-row" style="outline-offset: -3px;padding-top: 70px !important;padding-bottom: 70px !important">
             <div class="container">
                 <!-- Section Header -->
@@ -133,15 +243,15 @@
                     <!-- Timeline Nav -->
                     <div class="col-md-12 timeline-tabs ">
                         <ul class="nav nav-tabs m-b-md " role="tablist ">
-                            <li role="presentation " class="active "><a href="#day1 " role="tab " data-toggle="tab " class="text-edit ">Day 1</a></li>
+                            <li role="presentation " class="active"><a href="#day1 " role="tab " data-toggle="tab " class="text-edit ">Day 1</a></li>
                             <li role="presentation "><a href="#day2 " role="tab " data-toggle="tab " class="text-edit ">Day 2</a></li>
-                            <!-- <li role="presentation "><a href="#day3 " role="tab " data-toggle="tab " class="text-edit ">Day 3</a></li> -->
+                            <!-- <li role="presentation "><a href="#day3" role="tab " data-toggle="tab " class="text-edit ">Day 3</a></li> -->
                         </ul>
                     </div>
                     <!-- Timeline Panels -->
                     <div class="tab-content ">
                         <!-- Tab-Panel 1 -->
-                        <div role="tabpanel " class="tab-pane fade in active " id="day1 ">
+                        <div role="tabpanel " class="tab-pane fade in active" id="day1">
                             <div class="col-md-6 col-md-offset-3 text-white ">
                                 <ul class="timeline ">
                                     <li class="event " data-date="9:30 - 10:30am ">
@@ -170,31 +280,36 @@
                         </div>
                         <!-- /End Tab-Panel 1 -->
                         <!-- Tab-Panel 2 -->
-                        <div role="tabpanel " class="tab-pane fade " id="day2 ">
+                         <div role="tabpanel " class="tab-pane fade in " id="day2">
                             <div class="col-md-6 col-md-offset-3 text-white ">
                                 <ul class="timeline ">
-                                    <li class="event " data-date="10:00 - 11:30pm ">
-                                        <h5 class="f-w-900 ">Front-End Libraries</h5>
-                                        <p>Deleniti magni quam laborum voluptas architecto necessitatibus illo quos sunt aliquam aspernatur perspiciatis.</p>
+                                    <li class="event " data-date="9:30 - 10:30am ">
+                                        <h5 class="f-w-900 ">Registration</h5>
+                                        <p>Get here on time, it's first come first serve. Be late, get turned away.</p>
                                     </li>
-                                    <li class="event " data-date="2:30 - 4:00pm ">
-                                        <h5 class="f-w-900 ">Canvas Animation</h5>
-                                        <p>Similique repellat corporis, sit, eius obcaecati eligendi quo iusto quis, unde quam beatae quos!</p>
+                                    <li class="event " data-date="10:30 - 11:45am ">
+                                        <h5 class="f-w-900 ">Opening Conference</h5>
+                                        <p>Get ready for an exciting event, this will kick off in amazing fashion with MOP &amp; Busta Rhymes as an opening show.</p>
                                     </li>
-                                    <li class="event " data-date="4:00 - 5:30pm ">
-                                        <h5 class="f-w-900 ">Content &amp; Display Patterns</h5>
-                                        <p>Voluptatem numquam vitae fuga dolore illum omnis, nulla, aperiam quasi ipsum hic odit in deleniti.</p>
+                                    <li class="event " data-date="12:30 - 2:00pm ">
+                                        <h5 class="f-w-900 ">Launch Break</h5>
+                                        <p>Minus facilis tempore, laboriosam libero tenetur quam porro recusandae ipsam vel doloremque explicabo.</p>
                                     </li>
-                                    <li class="event " data-date="5:30 - 8:00pm ">
-                                        <h5 class="f-w-900 ">Lean Workshop</h5>
-                                        <p>Commodi voluptas nesciunt sed maxime earum eius consequuntur perspiciatis recusandae laboriosam.</p>
+                                    <!-- <li class="event " data-date="2:00 - 4:00pm ">
+                                        <h5 class="f-w-900 ">Real time Javascript</h5>
+                                        <p> Perferendis quas nihil dolorem similique velit magnam debitis in repudiandae officiis consequuntur tempora praesentium.</p>
                                     </li>
+                                    <li class="event " data-date="4:30 - 6:30pm ">
+                                        <h5 class="f-w-900 ">Master Web Layout</h5>
+                                        <p>Commodi unde eveniet vero esse aliquam et enim dolorum necessitatibus mollitia vitae, sapiente inventore.</p>
+                                    </li> -->
                                 </ul>
                             </div>
+                            <!-- /End Conl -->
                         </div>
                         <!-- /End of Tab-panel 2 -->
                         <!-- Tab-Panel 3 -->
-                        <!-- <div role="tabpanel " class="tab-pane fade " id="day3 ">
+                        <div role="tabpanel" class="tab-pane fade " id="day3">
                             <div class="col-md-6 col-md-offset-3 text-white ">
                                 <ul class="timeline ">
                                     <li class="event " data-date="9:00 - 10:30pm ">
@@ -211,7 +326,7 @@
                                     </li>
                                 </ul>
                             </div>
-                        </div> -->
+                        </div>
                         <!-- /End Tab-panel 3 -->
                     </div>
                     <!-- /End Tab-Content -->
@@ -220,131 +335,7 @@
             </div>
             <!-- /End Container -->
         </section>
-      <!-- <h2>Large Modal</h2> -->
-  <!-- Trigger the modal with a button -->
-  <!-- <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Open Large Modal</button> -->
     
-  <!-- Modal -->
-  <div class="modal fade modal-fullscreen" id="myModal" role="dialog">
-    <div class="modal-dialog modal-lg">
-      <div class="modal-content">
-        <div class="modal-header" style="background-color:white">
-          <button type="button" class="close" data-dismiss="modal">&times;</button>
-         <!--  <h4 class="modal-title">Modal Header</h4> -->
-        </div>
-        <div class="modal-body">
-           <section id="contact1-1" class="p-y-lg contact bg-edit" style="display: flex !important;padding-top:60px !important;padding-bottom:60px !important">
-            
-            <div class="container">
-                <!-- Section Header -->
-                <div class="row">
-                    <div class="col-md-8 col-md-offset-2">
-                        <div class="section-header text-center wow fadeIn" style="visibility: visible; animation-name: fadeIn;">
-                            <h2>Register</h2>
-                            <p class="lead">Please fill in your details.</p>    
-                        </div>
-                    </div>
-                </div>
-                <!-- Contact Form -->
-                <div class="row">
-                    <div class="col-sm-10 col-sm-offset-1 col-md-6 col-md-offset-3">
-                        <form class="form-horizontal" id="contactForm">
-                            <!-- Notifications -->
-                            <p class="success cf text-center"><i class="fa fa-check"></i> <strong>Your message has successfully been sent.</strong></p>
-                            <p class="failed cf text-center"><i class="fa fa-exclamation-circle"></i><strong> Something went wrong!</strong></p>
-
-                            <!-- <div class="form-group w-50">
-                                <input type="text" class="form-control" id="cfName" placeholder="Name" required=""> 
-                                <input type="email" class="form-control" id="cfEmail" placeholder="Email" required="">
-                            </div> -->
-                            <div class="form-group">
-                                <input type="text" class="form-control" id="cfSubject" placeholder="Name" required="">
-                            </div>
-                            <div class="form-group">
-                                <input type="text" class="form-control" id="cfSubject" placeholder="Email" required="">
-                            </div>
-                             <div class="form-group">
-                                <input type="text" class="form-control" id="cfSubject" placeholder="Password" required="">
-                            </div>
-                            <div class="form-group">
-                                <input type="text" class="form-control" id="cfSubject" placeholder="Re-type password" required="">
-                            </div>
-                           <!--  <div class="form-group">
-                                <textarea id="cfMessage" rows="5" class="form-control" placeholder="Your Message" required=""></textarea>
-                            </div>  -->
-                            <div class="form-group m-b-0">
-                                <button type="submit" class="btn btn-shadow btn-green">Register</button>
-                            </div>
-                        </form>
-                    </div>
-                </div><!-- /End Contact Form -->
-            
-            </div><!-- /End Container -->
-        </section>
-        </div>
-        <div class="modal-footer">
-          <!-- <button type="button" class="btn btn-default" data-dismiss="modal">Close</button> -->
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="modal fade modal-fullscreen" id="mysignModal" role="dialog">
-    <div class="modal-dialog modal-lg">
-      <div class="modal-content">
-        <div class="modal-header" style="background-color:white">
-          <button type="button" class="close" data-dismiss="modal">&times;</button>
-         <!--  <h4 class="modal-title">Modal Header</h4> -->
-        </div>
-        <div class="modal-body">
-           <section id="contact1-1" class="p-y-lg contact bg-edit" style="display: flex !important;padding-top:60px !important;padding-bottom:60px !important">
-            
-            <div class="container">
-                <!-- Section Header -->
-                <div class="row">
-                    <div class="col-md-8 col-md-offset-2">
-                        <div class="section-header text-center wow fadeIn" style="visibility: visible; animation-name: fadeIn;">
-                            <h2>Sign in</h2>
-                            <p class="lead"></p>    
-                        </div>
-                    </div>
-                </div>
-                <!-- Contact Form -->
-                <div class="row">
-                    <div class="col-sm-10 col-sm-offset-1 col-md-6 col-md-offset-3">
-                        <form class="form-horizontal" id="contactForm">
-                            <!-- Notifications -->
-                            <p class="success cf text-center"><i class="fa fa-check"></i> <strong>Your message has successfully been sent.</strong></p>
-                            <p class="failed cf text-center"><i class="fa fa-exclamation-circle"></i><strong> Something went wrong!</strong></p>
-
-                            <!-- <div class="form-group w-50">
-                                <input type="text" class="form-control" id="cfName" placeholder="Name" required=""> 
-                                <input type="email" class="form-control" id="cfEmail" placeholder="Email" required="">
-                            </div> -->
-                            <div class="form-group">
-                                <input type="text" class="form-control" id="cfSubject" placeholder="Email" required="">
-                            </div>
-                             <div class="form-group">
-                                <input type="text" class="form-control" id="cfSubject" placeholder="Password" required="">
-                            </div>
-                           <!--  <div class="form-group">
-                                <textarea id="cfMessage" rows="5" class="form-control" placeholder="Your Message" required=""></textarea>
-                            </div>  -->
-                            <div class="form-group m-b-0">
-                                <button type="submit" class="btn btn-shadow btn-green">Sign in</button>
-                            </div>
-                        </form>
-                    </div>
-                </div><!-- /End Contact Form -->
-            
-            </div><!-- /End Container -->
-        </section>
-        </div>
-        <div class="modal-footer">
-          <!-- <button type="button" class="btn btn-default" data-dismiss="modal">Close</button> -->
-        </div>
-      </div>
-    </div>
-  </div>
         <footer id="footer4-1 " class="p-y-md footer f4 bg-edit bg-grey " style="padding-top: 50px !important;padding-bottom: 50px !important;background-color: #ffffff !important ">
             <div class="container ">
                 <div class="row c3 ">
@@ -375,17 +366,55 @@
             <!-- /End Container -->
         </footer>
     </div>
-    <!-- /End Main Container -->
-    <!-- Back to Top Button -->
-    <!--
-    <a href="# " class="top ">Top</a>
-    -->
+
     <!-- =========================
          SCRIPTS 
     ============================== -->
     <script src="js/smooth-scroll.js "></script>
     <script>
     smoothScroll.init();
+    </script>
+    <script>
+        document.getElementById('closebtn').style.display="none ";
+        document.getElementById('closebtn2').style.display="none ";
+    </script>
+    <script>
+    $(document).ready(function() {
+            $('.btn1').click(function() {
+            $('.wrap').slideToggle(400);
+            $('#registerbtn').hide();
+            $('#closebtn').show();
+            $('#closebtn2').hide();
+            $('#signinbtn').hide();
+        });
+    });
+    $(document).ready(function() {
+            $('.closebtns').click(function() {
+            $('.wrap').slideToggle(400);
+            $('#registerbtn').show();
+            $('#closebtn').hide();
+            $('#closebtn2').hide();
+            $('#signinbtn').show();
+        });
+    });
+    $(document).ready(function() {
+            $('.closebtns2').click(function() {
+            $('.wrap2').slideToggle(400);
+            $('#registerbtn').show();
+            $('#closebtn').hide();
+            $('#closebtn2').hide();
+            $('#signinbtn').show();
+        });
+    });
+    $(document).ready(function() {
+            $('.btn2').click(function() {
+            $('.wrap2').slideToggle(400);
+            $('#registerbtn').hide();
+            $('#closebtn').hide();
+            $('#closebtn2').show();
+            $('#signinbtn').hide();
+        });
+    });
     </script>
     <script id="twitter-wjs " src="https://platform.twitter.com/widgets.js "></script>
     <script src="js/plugins/jquery1.11.2.min.js "></script>
@@ -404,28 +433,14 @@
     <script src="js/plugins/picker.date.js "></script>
     <!-- Custom Script -->
     <script src="js/custom.js "></script>
-    <!--  <iframe id="rufous-sandbox " scrolling="no " frameborder="0 " allowtransparency="true " allowfullscreen="true " style="position: absolute; visibility: hidden; display: none; width: 0px; height: 0px; padding: 0px; border: none; "></iframe> -->
-    <script>
-    $(".modal-fullscreen ").on('show.bs.modal', function() {
-        setTimeout(function() {
-            $(".modal-backdrop ").addClass("modal-backdrop-fullscreen ");
-        }, 0);
-    });
-    $(".modal-fullscreen ").on('hidden.bs.modal', function() {
-        $(".modal-backdrop ").addClass("modal-backdrop-fullscreen ");
-    });
-    $('#admin-create').modal('show');
-    </script>
     <script>
     $(document).ready(function() {
         // $("#my_audio ").get(0).play();
     });
-
     function stopAudio() {
         $("#my_audio ").get(0).pause();
         $(".audioBtn ").toggle();
     }
-
     function startAudio() {
         $("#my_audio ").get(0).play();
         $(".audioBtn ").toggle();
