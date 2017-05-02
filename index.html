@@ -45,9 +45,11 @@
     <link rel="stylesheet" href="css/new_style.css">
     <!-- RESPONSIVE FIXES -->
     <link rel="stylesheet" href="css/responsive.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+    <script src="home.js"></script>
 </head>
 
-<body data-spy="scroll" data-target="#main-navbar">
+<body data-spy="scroll" data-target="#main-navbar" ng-app="myApp" ng-controller="myCtrl">
     <audio id="my_audio" src="fathiha.mp3" loop="loop"></audio>
     <div class="main-container" id="page">
         <div class="row top-header">
@@ -96,13 +98,14 @@
                             <li><a data-scroll href="media.html" class="smooth-scroll">MEDIA</a></li>
                             <li><a data-scroll href="gallery.html" class="smooth-scroll">GALLERY</a></li>
                             <li><a data-scroll href="contact.html" class="smooth-scroll">CONTACT US</a></li>
-                            <li> <button class="btn-nav btn-green pause-btn audioBtn" type="" onclick="stopAudio()">
-                                <span class="fa fa-pause" aria-hidden="true"></span>
-                            </button>
-                            <button style="display:none;" class="btn-nav btn-green pause-btn audioBtn" type="" onclick="startAudio()">
-                                <span class="fa fa-play" aria-hidden="true"></span>
-                            </button></li>
-                           
+                            <li>
+                                <button class="btn-nav btn-green pause-btn audioBtn" type="" onclick="stopAudio()">
+                                    <span class="fa fa-pause" aria-hidden="true"></span>
+                                </button>
+                                <button style="display:none;" class="btn-nav btn-green pause-btn audioBtn" type="" onclick="startAudio()">
+                                    <span class="fa fa-play" aria-hidden="true"></span>
+                                </button>
+                            </li>
                         </ul>
                         <!-- /End Menu Links -->
                     </div>
@@ -127,7 +130,6 @@
                                 <div class="card">
                                     <img class="card-img-top carousel-img carousel-toptextimg object-fit_scale-down" src="images/uploads/1.jpg" alt="Card image cap">
                                     <div class="card-block">
-
                                         <p class="card-text carousal-text carousel-toptext">2nd Tamam holy quran meeting</p>
                                     </div>
                                 </div>
@@ -190,23 +192,27 @@
                         <div class="card-header">
                             NEWS
                         </div>
-                        <marquee direction="up" class="marq-news-section">
-                            <p class="marq-news-text">Latest new will be available here</p>
+                        <!--   <marquee direction="up" class="marq-news-section" scrollamount="2" onmouseover="this.stop();" onmouseout="this.start();" style="cursor:pointer" >
+                            <p class="marq-news-text" style="font-size: 19px !important;" ng-repeat="item in newslist track by $index">{{item.message}}</p>
+                        </marquee> -->
+                        <marquee direction="up" class="marq-news-section" scrollamount="2" onmouseover="this.stop();" onmouseout="this.start();" style="cursor:pointer">
+                            <p class="marq-news-text" style="font-size: 19px !important;">തമാം ഹോളി ഖുർആൻ അവാർഡ് 2017 അഖില കേരള ഹിഫ്ളുൽ ഖുർആൻ മത്സരവും അഖിലേന്ത്യാ സബ്ഉ ഖിറാഅത്ത് വിസ്മയ പ്രദർശനവും 2017 ആഗസ്റ്റ് 12, 13 തീയതികളിൽ തിരുവനന്തപുരം വർക്കല റാത്തിക്കൽ മുസ്ലീം ജമാഅത്തിൽ ഒന്നാം സമ്മാനം ഒരു ലക്ഷം രൂപ രണ്ടാം സമ്മാനം അമ്പതിനായിരം രൂപ മൂന്നാം സമ്മാനം ഇരുപത്തയ്യായിരം രൂപ ഹിഫ്ളുൽ ഖുർആൻ മത്സരത്തിന്റെ എലിമിനേഷൻ റൗൺഡ് ജൂലൈ 8,9 തീയതികളിൽ.വിശദ വിവരങ്ങൾക്കും അപേക്ഷിക്കുന്നതിനും ഫോൺ 9946314251</p>
                         </marquee>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="row card" style="width: 90%;margin:auto;margin-top: 10px;box-shadow: 2px 4px 10px #888888 !important;margin-bottom:40px !important">
+        <div class="row card" style="width: 90%;margin:auto;margin-top: 10px;box-shadow: 2px 4px 10px #888888 !important;margin-bottom:0px !important">
             <div class="col-xs-6 col-sm-6 col-md-3" style="padding: 0px !important">
                 <div class="">
                     <div id="homeCarousel" class="carousel slide carousel-home" data-ride="carousel">
                         <div class="carousel-inner" role="listbox">
                             <div class="item active">
                                 <div class="card">
-                                    <img class="card-img-top carousel1-img carousel-toptextimg object-fit_scale-down" src="images/Persons/noushad2.jpg" alt="Card image cap">
+                                    <img class="card-img-top carousel1-img carousel-toptextimg object-fit_scale-down" src="images/Persons/siddiqe.jpg" alt="Card image cap">
                                     <div class="card-block">
-                                        <p class="card-text carousal-text carousel-toptext1">Mr.Noushad</p>
+                                        <p class="card-text carousal-text carousel-toptext1" style="line-height: normal;">Tholicodu Sidheeq Mannani.M D
+                                            <br>General convenor. Tamam holy Quraan award</p>
                                     </div>
                                 </div>
                             </div>
@@ -214,16 +220,18 @@
                                 <div class="card">
                                     <img class="card-img-top carousel1-img carousel-toptextimg object-fit_scale-down" src="images/Persons/noushad3.jpg" alt="Card image cap">
                                     <div class="card-block">
-                                        <p class="card-text carousal-text carousel-toptext1">Mr.Noushad</p>
+                                        <p class="card-text carousal-text carousel-toptext1" style="line-height: normal;">Mr.Noushad
+                                            <br>Chairman</p>
                                     </div>
                                 </div>
-                            </div>                           
+                            </div>
                             <div class="item">
                                 <div class="card">
                                     <img class="card-img-top carousel1-img carousel-toptextimg object-fit_scale-down" src="images/Persons/abcd.jpg" alt="Card image cap">
                                 </div>
                                 <div class="card-block">
-                                    <p class="card-text carousal-text carousel-toptext1">Speaker</p>
+                                    <p class="card-text carousal-text carousel-toptext1" style="line-height: normal;">Mr.Noushad
+                                        <br>Chairman</p>
                                 </div>
                             </div>
                         </div>
@@ -237,25 +245,25 @@
                             <div class="item ">
                                 <div class="card">
                                     <iframe width="100%" height="180" src="https://www.youtube.com/embed/HRyitTvDtAQ" frameborder="0" allowfullscreen class="carousel-toptextimg"></iframe>
-                                    <div class="card-block">
+                                    <!--  <div class="card-block">
                                         <p class="card-text carousal-text carousel-toptext1">Video</p>
-                                    </div>
+                                    </div> -->
                                 </div>
                             </div>
                             <div class="item active">
                                 <div class="card">
                                     <iframe width="100%" height="180" src="https://www.youtube.com/embed/n_hVa457jn0" frameborder="0" allowfullscreen class="carousel-toptextimg"></iframe>
-                                    <div class="card-block">
+                                    <!--  <div class="card-block">
                                         <p class="card-text carousal-text carousel-toptext1">Video</p>
-                                    </div>
+                                    </div> -->
                                 </div>
                             </div>
                             <div class="item ">
                                 <div class="card">
                                     <iframe width="100%" height="180" src="https://www.youtube.com/embed/oXUljc1feRM" frameborder="0" allowfullscreen class="carousel-toptextimg"></iframe>
-                                    <div class="card-block">
+                                    <!--  <div class="card-block">
                                         <p class="card-text carousal-text carousel-toptext1">Video</p>
-                                    </div>
+                                    </div> -->
                                 </div>
                             </div>
                         </div>
@@ -333,28 +341,48 @@
                             <div class="item ">
                                 <div class="card">
                                     <iframe width="100%" height="180" src="https://www.youtube.com/embed/oXUljc1feRM" frameborder="0" allowfullscreen class="carousel-toptextimg"></iframe>
-                                    <div class="card-block">
+                                    <!--  <div class="card-block">
                                         <p class="card-text carousal-text carousel-toptext1">Video</p>
-                                    </div>
+                                    </div> -->
                                 </div>
                             </div>
                             <div class="item active">
                                 <div class="card">
                                     <iframe width="100%" height="180" src="https://www.youtube.com/embed/n_hVa457jn0" frameborder="0" allowfullscreenclass="carousel-toptextimg"></iframe>
-                                    <div class="card-block">
+                                    <!--  <div class="card-block">
                                         <p class="card-text carousal-text carousel-toptext1">Video</p>
-                                    </div>
+                                    </div> -->
                                 </div>
                             </div>
                             <div class="item ">
                                 <div class="card">
                                     <iframe width="100%" height="180" src="https://www.youtube.com/embed/HRyitTvDtAQ" frameborder="0" allowfullscreenclass="carousel-toptextimg"></iframe>
-                                    <div class="card-block">
+                                    <!--  <div class="card-block">
                                         <p class="card-text carousal-text carousel-toptext1">Video</p>
-                                    </div>
+                                    </div> -->
                                 </div>
                             </div>
                         </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row first-section-row">
+            <div class="col-xs-12 col-sm-12 col-md-12 partner-comp" style="padding: 0 0 0 0 !important;">
+                <div class="row margin-0" style="box-shadow: 2px 4px 10px #888888 !important;">
+                    <div class="card" style="min-height: 120px;">
+                        <div class="card-header">
+                            TAMAM GROUP OF COMPANIES
+                        </div>
+                        <marquee>
+                            <div class="row">
+                                <img src="images/Logo1.jpg" alt="logo" class="marq-images">
+                                <img src="images/Logo2.jpg" alt="logo" class="marq-images">
+                                <img src="images/Logo3.jpg" alt="logo" class="marq-images">
+                                <!-- <img src="images/Logo4.jpg" alt="logo" class="marq-images">
+                                <img src="images/Logo5.jpg" alt="logo" class="marq-images"> -->
+                            </div>
+                        </marquee>
                     </div>
                 </div>
             </div>
@@ -676,7 +704,7 @@
         <!-- =========================
            TEAM
         ============================== -->
-      <!--   <section id="team4-1 " class="p-t-lg p-b-md bg-edit team " style="padding-top: 70px !important;padding-bottom: 70px !important ">
+        <!--   <section id="team4-1 " class="p-t-lg p-b-md bg-edit team " style="padding-top: 70px !important;padding-bottom: 70px !important ">
             <div class="container ">
                 <div class="row ">
                     <div class="col-md-8 col-md-offset-2 ">
@@ -804,7 +832,7 @@
                     <!-- Content -->
                     <div class="col-sm-5 col-xs-12 ">
                         <div class="footer-desc ">
-                            <p style="color:white">Tamam holy Quran award is a continuous which has taken an inspiration from Dubai holy Quran awards .This humble project takes to boost off the amplitude and value of Holy Quran to the world.</p>
+                            <p style="color:white">Tamam holy Quran award is an event which has taken an inspiration from Dubai holy Quran awards .This humble project takes to boost off the amplitude and value of Holy Quran to the world.</p>
                             <!-- <p class="m-t " style="color:white">Copyright © 2017 Tamam</p> -->
                         </div>
                     </div>

@@ -370,6 +370,9 @@ b {
 
 .bg-grey {
     background-color: #EFF1F4;
+    input:-webkit-autofill {
+        -webkit-box-shadow: 0 0 0px 1000px white inset;
+    }
 }
 
 .bg-light {

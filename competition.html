@@ -50,6 +50,8 @@
     <link rel="stylesheet" href="css/new_style.css">
     <!-- RESPONSIVE FIXES -->
     <link rel="stylesheet" href="css/responsive.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+    <script src="competition.js"></script>
 </head>
 <style>
 .wrap {
@@ -65,7 +67,7 @@
 }
 </style>
 
-<body data-spy="scroll" data-target="#main-navbar">
+<body data-spy="scroll" data-target="#main-navbar" ng-app="myApp" ng-controller="myCtrl">
     <audio id="my_audio" src="fathiha.mp3" loop="loop"></audio>
     <div class="main-container" id="page">
         <div class="row top-header">
@@ -114,13 +116,14 @@
                             <li><a data-scroll href="media.html" class="smooth-scroll">MEDIA</a></li>
                             <li><a data-scroll href="gallery.html" class="smooth-scroll">GALLERY</a></li>
                             <li><a data-scroll href="contact.html" class="smooth-scroll">CONTACT US</a></li>
-                            <li> <button class="btn-nav btn-green pause-btn audioBtn" type="" onclick="stopAudio()">
-                                <span class="fa fa-pause" aria-hidden="true"></span>
-                            </button>
-                            <button style="display:none;" class="btn-nav btn-green pause-btn audioBtn" type="" onclick="startAudio()">
-                                <span class="fa fa-play" aria-hidden="true"></span>
-                            </button></li>
-                           
+                            <li>
+                                <button class="btn-nav btn-green pause-btn audioBtn" type="" onclick="stopAudio()">
+                                    <span class="fa fa-pause" aria-hidden="true"></span>
+                                </button>
+                                <button style="display:none;" class="btn-nav btn-green pause-btn audioBtn" type="" onclick="startAudio()">
+                                    <span class="fa fa-play" aria-hidden="true"></span>
+                                </button>
+                            </li>
                         </ul>
                         <!-- /End Menu Links -->
                     </div>
@@ -134,13 +137,11 @@
             <div class="container">
                 <!-- Section Header -->
                 <div class="row">
-
                     <div class="col-md-10 col-md-offset-1 c2">
-                     <h4 class="m-t f-w-900" style="text-align:center;padding-bottom:20px">Wish to register for this event?</h4>
+                        <h4 class="m-t f-w-900" style="text-align:center;padding-bottom:20px">Wish to register for this event?</h4>
                         <!-- Dynamic Options -->
                         <div class="col-md-6">
                             <section id="timetable1-1" class="p-y-lg bg-edit" style="padding-top:0px !important;padding-bottom:0px !important">
-                               
                                 <!-- <div class="container"> -->
                                 <!-- Section Header -->
                                 <!-- Timetable Tab -->
@@ -154,45 +155,55 @@
                                         <div class="tab-content">
                                             <!-- Tab Panel 1 -->
                                             <div role="tabpanel" class="tab-pane fade in active" id="monday">
-                                                <form class="form-horizontal form-white form-bg bg-grey m-t-0" id="ticketForm" role="form" >
+                                                <form autocomplete="off" class="form-horizontal form-white form-bg bg-grey m-t-0" name="regForm" role="form" novalidate>
                                                     <p class="m-b-md f-w-700 text-center" style="padding-top:10px">Register</p>
                                                     <p class="success tf text-center"><i class="fa fa-check"></i> <strong>You have successfully subscribed.</strong></p>
                                                     <p class="failed tf text-center"><i class="fa fa-exclamation-circle"></i><strong> Something went wrong!</strong></p>
                                                     <div class="form-group marg">
-                                                        <input type="text" class="form-control" id="tfName" placeholder="Name" required="">
+                                                        <input type="text" name="name" class="form-control" id="tfName" placeholder="Name" required="" ng-model="reg_name" required>
+                                                    </div>
+                                                    <div class="form-errors" ng-messages="regForm.name.$error" ng-show="regForm.name.$invalid && regForm.name.$dirty || regForm.name.$invalid && regForm.$submitted ">
+                                                        <div class="form-error" ng-if="regForm.name.$error.required">This field is required.</div>
                                                     </div>
                                                     <div class="form-group marg">
-                                                        <input type="email" class="form-control" id="tfEmail" placeholder="Email" required="">
+                                                        <input type="email" name="email" class="form-control" id="tfEmail" placeholder="Email" required="" ng-model="reg_email" ng-pattern="/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/" ng-focus autocomplete="off" required>
+                                                    </div>
+                                                    <div class="form-errors" ng-messages="regForm.email.$error" ng-show="regForm.email.$invalid && regForm.email.$dirty || regForm.email.$invalid && regForm.$submitted ">
+                                                        <!-- <div class="form-error" ng-if="regForm.email.$error.required">This field is required.</div> -->
+                                                        <div class="form-error" ng-message="pattern">Enter a valid email.</div>
                                                     </div>
                                                     <div class="form-group marg">
-                                                        <input type="text" class="form-control" id="tfPhone" placeholder="Phone Number" required="">
+                                                        <input type="password" class="form-control" id="tfPhone" placeholder="Password"  ng-model="reg_pass" name="password" required>
+                                                    </div>
+                                                    <div class="form-errors" ng-messages="regForm.password.$error" ng-show="regForm.password.$invalid && regForm.password.$dirty || regForm.password.$invalid && regForm.$submitted ">
+                                                        <div class="form-error" ng-if="regForm.password.$error.required">This field is required.</div>
                                                     </div>
                                                     <div class="form-group marg">
-                                                        <input type="text" class="form-control" id="tfPhone" placeholder="Password" required="">
+                                                        <input type="password" class="form-control" id="tfPhone" placeholder="Re-type password" required name="repassword" ng-model="reg_repass">
+                                                    </div>
+                                                    <div class="form-errors" ng-messages="regForm.repassword.$error" ng-show="regForm.repassword.$invalid && regForm.repassword.$dirty || regForm.repassword.$invalid && regForm.$submitted ">
+                                                        <div class="form-error" ng-if="regForm.repassword.$error.required">This field is required.</div>
                                                     </div>
                                                     <div class="form-group marg">
-                                                        <input type="text" class="form-control" id="tfPhone" placeholder="Re-type password" required="">
-                                                    </div>
-                                                    <div class="form-group marg">
-                                                        <button type="submit" class="btn btn-shadow btn-green" style="margin-bottom:10px">REGISTER</button>
+                                                        <button type="submit" class="btn btn-shadow btn-green" style="margin-bottom:10px" ng-click="register(regForm)">REGISTER</button>
                                                     </div>
                                                 </form>
                                             </div>
                                             <!-- /End Tab-Panel 1 -->
                                             <!-- Tab Panel 2 -->
                                             <div role="tabpanel" class="tab-pane fade" id="tuesday">
-                                                <form class="form-horizontal form-white form-bg bg-grey m-t-0" id="ticketForm" role="form" >
+                                                <form class="form-horizontal form-white form-bg bg-grey m-t-0" id="ticketForm" role="form">
                                                     <p class="m-b-md f-w-700 text-center" style="padding-top:10px">Sign in</p>
                                                     <p class="success tf text-center"><i class="fa fa-check"></i> <strong>You have successfully subscribed.</strong></p>
                                                     <p class="failed tf text-center"><i class="fa fa-exclamation-circle"></i><strong> Something went wrong!</strong></p>
                                                     <div class="form-group marg">
-                                                        <input type="email" class="form-control" id="tfEmail" placeholder="Email" required="">
+                                                        <input type="email" class="form-control" id="" placeholder="Email" required="" ng-model="sign_email">
                                                     </div>
                                                     <div class="form-group marg">
-                                                        <input type="text" class="form-control" id="tfPhone" placeholder="Password" required="">
+                                                        <input type="password" class="form-control" id="" placeholder="Password" required="" ng-model="sign_password">
                                                     </div>
                                                     <div class="form-group marg">
-                                                        <button type="submit" class="btn btn-shadow btn-green" style="margin-bottom:10px">SIGN IN</button>
+                                                        <button type="submit" class="btn btn-shadow btn-green" style="margin-bottom:10px" ng-click="signin()">SIGN IN</button>
                                                     </div>
                                                 </form>
                                             </div>
@@ -272,7 +283,7 @@
                                     <li class="price text-edit" style="font-size: 30px !important;background-color:#56b68b"><span style="font-size: 17px;">Application form</span></li>
                                 </ul>
                                 <div style="padding-left:15px;padding-right:15px;margin-bottom: 20px;margin-top: 20px;text-align: center;">You can download the application form which is available in pdf format.Please click on the download button and download the pdf file.</div>
-                                <div style="padding-left:10px;padding-right:10px"><a href="https://www.dropbox.com/s/ipvmr0nduhtyv9e/Get%20Started%20with%20Dropbox.pdf?dl=1" class="btn btn-shadow btn-blue text-uppercase" style="font-size: 14px;width:100%">Download</a></div>
+                                <div style="padding-left:10px;padding-right:10px"><a href="https://www.dropbox.com/s/lge9zgz2ap3np7u/Tamam%20application.pdf?dl=1" class="btn btn-shadow btn-blue text-uppercase" style="font-size: 14px;width:100%">Download</a></div>
                             </div>
                         </div>
                         <!-- /End Col Price -->
@@ -415,7 +426,7 @@
             </div>
             <!-- /End Container -->
         </section>
-    
+        
         <footer id="footer4-1 " class="p-y-md footer f4 bg-edit bg-grey " style="padding-top: 50px !important;padding-bottom: 50px !important;background-color: #ffffff !important ">
             <div class="container ">
                 <div class="row c3 ">
@@ -427,12 +438,12 @@
                     <!-- Content -->
                     <div class="col-sm-5 col-xs-12 ">
                         <div class="footer-desc ">
-                            <p>Tamam holy Quran award is a continuous which has taken an inspiration from Dubai holy Quran awards .This humble project takes to boost off the amplitude and value of Holy Quran to the world.</p>
+                            <p>Tamam holy Quran award is an event which has taken an inspiration from Dubai holy Quran awards .This humble project takes to boost off the amplitude and value of Holy Quran to the world.</p>
                             <p class="m-t ">Copyright © 2017 Tamam</p>
                         </div>
                     </div>
                     <!-- Social Link -->
-                     <div class="col-sm-4 col-xs-12 " style="text-align:center;">
+                     <div class="col-sm-4 col-xs-12 " style="text-align:center; ">
                         <div class="footer-desc ">
                             <p >Email:tamamholyquran@gmail.com</p>
                             <p class="m-t " >Copyright © 2017 Tamam</p>
@@ -444,6 +455,22 @@
             <!-- /End Container -->
         </footer>
     </div>
+    <div class="modal fade " id="myModal" role="dialog ">
+    <div class="modal-dialog modal-sm ">
+      <div class="modal-content ">
+        <!-- <div class="modal-header " style="background-color:#56b68b ">
+          <button type="button " class="close " data-dismiss="modal ">&times;</button>
+          <h4 class="modal-title ">Modal Header</h4>
+        </div> -->
+        <div class="modal-body " style="text-align:center ">
+          <p>Registration successfull</p>
+        </div>
+        <div class="modal-footer " style="text-align:center;border-top: 1px solid #ffffff !important; ">
+          <button type="button " class="btn btn-default " data-dismiss="modal " ng-click="closepop() " style="background-color:#56b68b ">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
 
     <!-- =========================
          SCRIPTS 

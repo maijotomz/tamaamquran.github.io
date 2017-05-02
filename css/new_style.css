@@ -99,11 +99,11 @@
 }
 
 .news-section-card {
-    max-height: 185px;
+    min-height: 185px;
 }
 
 .marq-news-section {
-    min-height: 146px;
+    max-height: 140px;
 }
 
 .marq-news-text {
@@ -137,7 +137,8 @@
 
 .carousel-toptext1 {
     position: absolute;
-    top: 130px;
+    top: 123px;
+    min-height: 60px;
     left: 0;
     width: 100%;
     background-color: rgba(0, 0, 0, 0.43);
@@ -151,4 +152,12 @@
 .marg {
     margin-left: 15px !important;
     margin-right: 15px !important;
+}
+
+.form-errors {
+    padding-left: 17px;
+    margin-top: -15px;
+    padding-bottom: 10px;
+    font-size: 12px;
+    color: #dc5151;
 }
